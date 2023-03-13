@@ -6,7 +6,10 @@ function DEBUG()
 {
 
 
- [ "$_DEBUG" == "on" ] && $@ || :
+# [ "$_DEBUG" == "on" ] && $@ || :
+[ "$_DEBUG" == "on" ] && $@ || :
+
+
 
 
 }
