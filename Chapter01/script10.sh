@@ -17,4 +17,22 @@ function fname()
 
 }
 
+function name()
+{
+	read -p "input your name:" name1
+	echo $name1;
 
+}
+
+function age()
+{
+	read -p "input your age:" age1
+	echo $age1;
+
+}
+
+
+a=$(name)
+b=$(age)
+echo 'a='$a
+echo "b="$b
