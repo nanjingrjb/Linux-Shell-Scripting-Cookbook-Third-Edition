@@ -16,8 +16,8 @@ function fname()
  return 0; # Return value
 
 }
-read a;
-read b;
+read -p "input your name:" a;
+read -p "input your age:"  b;
 
 fname $a $b;
 
