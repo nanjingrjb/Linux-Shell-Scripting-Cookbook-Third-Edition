@@ -32,7 +32,7 @@ function age()
 }
 
 
-a=$(name)
-b=$(age)
-echo 'a='$a
-echo "b="$b
+#a=$(name)
+#b=$(age)
+#echo 'a='$a
+#echo "b="$b
