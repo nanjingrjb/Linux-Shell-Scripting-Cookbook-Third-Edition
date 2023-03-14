@@ -1,4 +1,5 @@
-fname()
+#!/bin/bash
+function fname()
 
 {
 
@@ -15,3 +16,8 @@ fname()
  return 0; # Return value
 
 }
+read a;
+read b;
+
+fname $a $b;
+
