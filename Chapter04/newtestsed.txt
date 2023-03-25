@@ -1,0 +1,9 @@
+HELLO LINUX!  
+python is a free unix-type opterating system.  
+This is a linux testfile!  
+python test 
+Google
+Taobao
+Runoob
+Tesetfile
+Wiki

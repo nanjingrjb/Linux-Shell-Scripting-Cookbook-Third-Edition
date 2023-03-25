@@ -1,0 +1,9 @@
+gnu is not unix
+
+            linux is fun
+            bash is art
+            $ cat sample2.txt
+            planetlinux
+            $ grep linux -n sample1.txt
+            2:linux is fun
+
