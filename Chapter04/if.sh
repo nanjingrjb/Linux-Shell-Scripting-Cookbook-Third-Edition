@@ -22,7 +22,7 @@ else echo "normal"
 fi
 
 
-echo "采用(())进行判断，只支持整数判断"
+echo "采用(())"
 
 if (($score < 60))
 then echo "failed"
@@ -32,4 +32,6 @@ elif (($score >= 80 ))
 then echo "good"
 else echo "normal"
 fi
+
+
 
