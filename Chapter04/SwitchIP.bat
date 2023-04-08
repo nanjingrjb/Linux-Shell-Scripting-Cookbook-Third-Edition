@@ -33,7 +33,7 @@ echo 请选择,或按q退出...
 
 set /p shu= 
 
-set networkName=wlan
+set networkName=KillerWireless
 
 if "%shu%"=="1" cls&goto ONE
 if "%shu%"=="2" cls&goto TWO
@@ -55,9 +55,25 @@ echo 正在设置网络[%networkName%]固定IP地址请稍等……
 netsh interface ip set address name=%networkName% source=static addr=192.168.3.251 gateway=192.168.3.1 gwmetric=1
 netsh interface ip set dns name=%networkName% source=static addr=180.76.76.76
 netsh interface ip add dns name=%networkName% addr=223.5.5.5
+::找到特定的443端口并杀死对应进程
+for /f "tokens=5" %%a in ('netstat /ano ^| findstr 443') do taskkill /F /pid %%a
+
+::关闭之前的服务
+sc stop VisualSVNServer
+sc stop vsvnjobsvc
+sc stop vdfssvc
 
 
-set /p wait= 设置成功，按任意键退出
+
+
+::重启服务
+sc start VisualSVNServer
+sc start vsvnjobsvc
+sc start vdfssvc
+
+
+
+set /p wait= svn服务器端口已开启
 
 exit
 
