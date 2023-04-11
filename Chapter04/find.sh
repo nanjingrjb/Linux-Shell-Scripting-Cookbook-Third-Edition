@@ -12,3 +12,8 @@ echo "寻找文件 find ./testfind -type f |wc"
 
  echo "寻找txt文件，大小小于100m以内，find ~ -name \*.txt -type f -size -100M"
  find ~ -name \*.txt -type f -size -100M |wc -l
+
+
+ echo "寻找最近10分钟访问过的文件，find . -atime
+ 10"
+ find ./testfind -amin -60 -type f

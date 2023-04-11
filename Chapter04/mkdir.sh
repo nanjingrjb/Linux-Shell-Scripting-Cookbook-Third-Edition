@@ -14,4 +14,4 @@ touch dir_{0..100}/file_{a..z}
 
 pwd
 #寻找统计file*的个数
-find ./ -name file_[ab] |wc
+#find ./ -name file_[ab] |wc
