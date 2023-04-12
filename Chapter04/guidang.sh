@@ -59,3 +59,5 @@ done
 ##::echo $gzk_path
 
 ##echo ${device_path[*]}
+
+
