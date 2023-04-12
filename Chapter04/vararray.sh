@@ -17,4 +17,6 @@ for i in ${name[*]};do
 	fi
 done
 
+echo ${name[*]}
+
 
