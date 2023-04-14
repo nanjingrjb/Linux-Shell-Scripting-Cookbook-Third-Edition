@@ -19,3 +19,6 @@ grep --color=auto  -n -iE '(linux|lsb)[-_]+' ./testgrep/*.txt
 
 echo "含有linux或lsb字符，中间不含有连接符号_-的命令:grep  -n -E '[-_]+' ./testgrep/*.txt"
 grep --color=auto  -n -iE '(linux|lsb)[^-_]+' ./testgrep/*.txt
+
+echo "含有linux或lsb字符，中间不含有连接符号_-的命令,且以数字结尾:grep  -n -E '[-_]+' ./testgrep/*.txt"
+grep --color=auto  -n -iE '(linux|lsb)[^-_]+[0-9]+$' ./testgrep/*.txt
