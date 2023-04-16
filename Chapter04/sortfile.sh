@@ -15,3 +15,6 @@ du -s /usr/share/* | sort -nr |head
 
 echo "列出文件列表并按照大小排序，需要使用sort的字段来排序，-k选项，并按照人的思维，从1计数"
 ls -l /usr/bin |sort -nrk 5|head
+
+echo '指定分割符-t:，指定排序字段'
+sort -t ':' -k 7 /etc/passwd |head
