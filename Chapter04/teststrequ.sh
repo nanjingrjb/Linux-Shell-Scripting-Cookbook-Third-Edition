@@ -10,3 +10,8 @@ if [ $1='rich' ];then
 else
 	echo "$1"
 fi
+if [ !$2='poor' ];then
+	echo "$2 not 'poor'"
+else
+	echo "$2"
+fi
