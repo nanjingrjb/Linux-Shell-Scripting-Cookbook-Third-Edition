@@ -5,12 +5,16 @@
 # Created Time: Mon Apr 17 18:10:40 2023
 #########################################################################
 #!/bin/bash
+cp /sdcard/Download/Cha*.zip /sdcard/111py/shellbible
 cd /sdcard/111py/shellbible
-if ls  *.zip ;then
-
-for i in `ls *.zip`;
-do unzip $i
-done
+if [ -d  Cha* ];then
+	echo "file already unzip." 
+	rm -fr Cha*
+elif ls  *.zip ;then
+     for i in `ls *.zip`;
+     do unzip $i
+	rm	 $i	
+	 done
 else
-	echo "no zip file."""
+	echo 'no zip file'
 fi
