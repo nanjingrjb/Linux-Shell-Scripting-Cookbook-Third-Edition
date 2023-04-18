@@ -6,5 +6,5 @@
 #########################################################################
 #!/bin/bash
 
-gawk 'BEGIN {print "the content of data3 :"};{print $0}' data3.txt
+gawk 'BEGIN {print "the content of data3 :"};{print $0};END {print "That is all." }' data3.txt
 
