@@ -7,3 +7,13 @@
 #!/bin/bash
 echo "are you ok?"|sed 'a\iamok\'
 echo "are you ok?"|sed 'i\iamok\'
+des=`pwd`
+dirname="sedtest"
+if [ ! -d $dirname ];then
+	mkdir $dirname
+	echo "create dir:$dirname"
+else
+	echo "start rm dir $dirname."
+	rm -fr $dirname
+fi
+
