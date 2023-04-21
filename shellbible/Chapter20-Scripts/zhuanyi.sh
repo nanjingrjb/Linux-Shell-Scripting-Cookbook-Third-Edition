@@ -9,3 +9,4 @@ echo "this is a zhuanyi test for \."
 echo "using \",need more \\."
 echo "\ is a special character."|sed -n '/\\/p'
 echo "\ is a special character."|sed -n "/\\\/p"
+echo "3/2"|sed '/\//p'
