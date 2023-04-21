@@ -17,3 +17,5 @@ else
 	rm -fr $dirname
 fi
 
+dirnow=/sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/shellbible/Chapter21-Scripts
+echo "$dirnow"
