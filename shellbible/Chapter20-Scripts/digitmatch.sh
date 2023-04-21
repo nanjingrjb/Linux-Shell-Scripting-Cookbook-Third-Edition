@@ -1,12 +1,8 @@
 #########################################################################
-# File Name: dianhao.sh
+# File Name: digitmatch.sh
 # Author: ma6174
 # mail: ma6174@163.com
-# Created Time: Fri Apr 21 13:39:27 2023
+# Created Time: Fri Apr 21 14:08:44 2023
 #########################################################################
 #!/bin/bash
-
-sed -n '/[^ ]a[^ ]/p' data6
-grep  '[^ ]a[^ ]' data6
-
-sed -n '/[ch]a/p' data6
+echo "12 343 890 4d 9j 98 23"|grep --color  '\<[0-9][0-9]\>'

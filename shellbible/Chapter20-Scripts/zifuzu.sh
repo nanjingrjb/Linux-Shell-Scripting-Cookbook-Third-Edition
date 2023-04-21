@@ -1,12 +1,8 @@
 #########################################################################
-# File Name: dianhao.sh
+# File Name: zifuzu.sh
 # Author: ma6174
 # mail: ma6174@163.com
-# Created Time: Fri Apr 21 13:39:27 2023
+# Created Time: Fri Apr 21 13:47:42 2023
 #########################################################################
 #!/bin/bash
-
-sed -n '/[^ ]a[^ ]/p' data6
-grep  '[^ ]a[^ ]' data6
-
-sed -n '/[ch]a/p' data6
+sed -n '/number [0-9]/p' data7
