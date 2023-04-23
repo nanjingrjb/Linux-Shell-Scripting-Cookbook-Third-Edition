@@ -17,3 +17,6 @@ echo 'write data to file:'
 sed '1,2w new.txt' data1.txt
 echo "new file content:"
 cat new.txt
+echo "read fact.sh and insert 3line of new.txt"
+sed -i '1r fact.sh' new.txt
+cat new.txt
