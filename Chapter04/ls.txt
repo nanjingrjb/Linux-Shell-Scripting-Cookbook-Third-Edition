@@ -11,5 +11,5 @@
 /mnt/e/SAL_SRC/01_PRJ/APP_SAL35/Release/strip_DA_G
 /mnt/e/SAL_SRC/01_PRJ/APP_SAL35/Release/strip_GZK
 /mnt/e/SAL_220/02_CFG_ALL
-/mnt/e/SAL_WORK/3_CFG_ALL
+/mnt/e/SAL_WORK/3-CFG_ALL
 

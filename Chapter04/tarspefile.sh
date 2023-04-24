@@ -6,7 +6,9 @@
 #########################################################################
 #!/bin/bash
 config=ls.txt
-desname=mysh.tar.gz
+despath=/mnt/d/001_BaseVerBackup
+datenow=`date +%Y%m%d_%H%M%S`
+desname=${datenow}_backups.tar
 exec 0< $config
 read filename
 #echo $filename
@@ -17,4 +19,4 @@ do
 done
 
 #echo $filelst
-tar -czf $desname $filelst
+tar -czf $despath/$desname $filelst 2> /dev/null
