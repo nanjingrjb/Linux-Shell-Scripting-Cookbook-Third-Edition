@@ -1,14 +1,13 @@
 #########################################################################
-# File Name: gawk.sh
+# File Name: util.sh
 # Author: ma6174
 # mail: ma6174@163.com
-# Created Time: Tue Apr 18 11:49:26 2023
+# Created Time: Tue Apr 25 07:22:39 2023
 #########################################################################
 #!/bin/bash
-
-#gawk '{print "hello world!"}'
-
-echo "显示sed.txt中的各个字符量"
-for i in {1..12};do
-	gawk  '{print($($i))}'   sed.txt
+var=100
+until [ $var -eq 0 ]
+do 
+	echo $var
+	var=$[$var - 25]
 done
