@@ -1,15 +1,14 @@
-/mnt/e/SRC_220/01_PRJ/APP_220/src
-/mnt/e/SRC_220/01_PRJ/APP_220/Release/strip_A_GCN
-/mnt/e/SRC_220/01_PRJ/APP_220/Release/strip_DA_GCN
-/mnt/e/SRC_220/01_PRJ/APP_220/Release/strip_DA_GZK
-/mnt/e/SRC_220/01_PRJ/APP_220/src_A_GCN
-/mnt/e/SAL_SRC/01_PRJ/APP_35T/src
-/mnt/e/SAL_SRC/01_PRJ/APP_35T/Release/strip_35T_DA_G
-/mnt/e/SAL_SRC/01_PRJ/APP_35T/Release/strip_35T_GCN
-/mnt/e/SAL_SRC/01_PRJ/APP_35T/Release/strip_35T_GZK
-/mnt/e/SAL_SRC/01_PRJ/APP_SAL35/Release/strip_A_G
-/mnt/e/SAL_SRC/01_PRJ/APP_SAL35/Release/strip_DA_G
-/mnt/e/SAL_SRC/01_PRJ/APP_SAL35/Release/strip_GZK
-/mnt/e/SAL_220/02_CFG_ALL
-/mnt/e/SAL_WORK/3-CFG_ALL
+/mnt/e/SRC_220/01_PRJ/APP_220/src    src_220
+/mnt/e/SRC_220/01_PRJ/APP_220/Release/strip_A_GCN   app_Release_220_A_GCN
+/mnt/e/SRC_220/01_PRJ/APP_220/Release/strip_DA_GZK app_Release_220GZK
+/mnt/e/SRC_220/01_PRJ/APP_220/src_A_GCN src_220_A_GCN
+/mnt/e/SAL_SRC/01_PRJ/APP_SAL35/src src_35L
+/mnt/e/SAL_SRC/01_PRJ/APP_35T/src	src_35t
+/mnt/e/SAL_SRC/01_PRJ/APP_35T/Release  app_Release_35t
+/mnt/e/SAL_SRC/01_PRJ/APP_SAL35/Release app_Release_35L
+/mnt/e/SAL_220/02_CFG_ALL/01_Logic  cfg_220/01_Logic
+/mnt/e/SAL_220/02_CFG_ALL/02_HSCfg  cfg_220/02_HSCfg 
+/mnt/e/SAL_WORK/3-CFG_ALL/01_Logic  cfg_35/01_Logic
+/mnt/e/SAL_WORK/3-CFG_ALL/02_HSCfg  cfg_35/02_HSCfg
+
 
