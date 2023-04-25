@@ -6,7 +6,7 @@
 #########################################################################
 #!/bin/bash
 echo "使用gawk和xargs来判断当前的ascii文件的个数"
-ls -l |gawk '{print $9}' res.txt | xargs file {}| grep ASCII | wc -l
+ls -l |gawk '{print $9}'  | xargs file {}| grep ASCII | wc -l
 
 echo "直接使用file和gawk来判断当前的ascii文件的个数"
 
