@@ -11,3 +11,13 @@ do
 	echo $var
 	var=$[$var - 25]
 done
+
+i=1
+res=1
+until  [ $i -eq 6 ]
+do 
+	res=$[$res*$i]
+	i=$[$i+1]
+done
+echo $res
+
