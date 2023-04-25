@@ -1,0 +1,2 @@
+this is a tabnew file uding
+:tabnew in vi command.

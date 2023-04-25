@@ -1,0 +1,6 @@
+/data/data/com.termux/files/usr/bin/bunzip2
+/data/data/com.termux/files/usr/bin/bzip2
+/data/data/com.termux/files/usr/share/bash-completion/completions/bzip2
+/data/data/com.termux/files/usr/share/bash-completion/completions/lbzip2
+/data/data/com.termux/files/usr/share/bash-completion/completions/pbzip2
+/usr/lib/aarch64-linux-gnu/perl/5.34.0/auto/Compress/Raw/Bzip2
