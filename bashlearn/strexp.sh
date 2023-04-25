@@ -8,3 +8,11 @@
 a=foo
 b=${a}_file
 echo $b
+
+foo=
+echo ${foo:=-"default value if unset"}
+echo $foo
+
+foo=bar
+echo ${foo:=-"default value if unset"}
+echo $foo
