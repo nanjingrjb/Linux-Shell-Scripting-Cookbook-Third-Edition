@@ -6,10 +6,14 @@
 #########################################################################
 #!/bin/bash
 exec 0<array.sh
+exec 2>err.txt
+#exec 1>info.txt
 count=1
 while read line;
 do 
-	if ! [[ $line =~ ^# ]]; 
+	if ! [[ $line =~ ^# ]];
+#    echo $line|grep -n '^#';
+	#if [  $? ];
 	then	
 	echo "$count $line"
 	count=$[count+1]
