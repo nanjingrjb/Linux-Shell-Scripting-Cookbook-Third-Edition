@@ -28,7 +28,7 @@ do
 		if [ ${#toke[*]} -gt 1 ] && [ ! -d $desdir/${toke[0]} ];then
 			mkdir $desdir/${toke[0]}
 		fi
-		cp -r $filename $desdir/$outname
+		cp -r $filename/* $desdir/$outname
 	fi
 	read filename  outname
 done
