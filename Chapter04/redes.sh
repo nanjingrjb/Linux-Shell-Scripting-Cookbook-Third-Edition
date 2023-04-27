@@ -12,8 +12,9 @@ count=1
 while read line;
 do 
 	if ! [[ $line =~ ^# ]];
-#    echo $line|grep -n '^#';
-	#if [  $? ];
+#	echo $line|grep -q '^#'
+ #   echo $?
+#	if [  $? ];
 	then	
 	echo "$count $line"
 	count=$[count+1]
