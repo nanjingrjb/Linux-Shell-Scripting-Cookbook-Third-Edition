@@ -1,94 +1,102 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+123.txt:             ASCII text
+RECOVERED_FILES:     directory
+SwitchIP.bat:        DOS batch file, ISO-8859 text, with CRLF line terminators
+array.sh:            ASCII text
+arrin.sh:            ASCII text
+atd.sh:              Bourne-Again shell script, UTF-8 Unicode text executable, with CRLF line terminators
+bcfloat.sh:          ASCII text, with CRLF line terminators
+color.bat:           ISO-8859 text, with CRLF line terminators
+crontab:             ASCII text, with CRLF line terminators
+crontab.sh:          ASCII text
+crontab.txt:         ASCII text
+dateformat.sh:       UTF-8 Unicode text, with CRLF line terminators
+deldir.sh:           ASCII text
+dir.txt:             ASCII text
+dirbin.txt:          ASCII text
+dirinfo.txt:         ASCII text
+err.txt:             empty
+exprmul.sh:          ASCII text, with CRLF line terminators
+find.sh:             UTF-8 Unicode text
+findpdf.sh:          UTF-8 Unicode text
+foo.txt:             ASCII text
+gawk.sh:             UTF-8 Unicode text
+grep.sh:             Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+grepMakeDir.sh:      ASCII text
+grep_kuohao.sh:      UTF-8 Unicode text
+grepawk.sh:          ASCII text, with CRLF line terminators
+grepdir.sh:          ASCII text
+grepdir.txt:         ASCII text
+grepphone.sh:        Bourne-Again shell script, ASCII text executable
+greprm.sh:           ASCII text
+greprmpho.sh:        ASCII text
+guidang.sh:          UTF-8 Unicode text
+guidang_bak.sh:      UTF-8 Unicode text
+hj.txt:              ASCII text
+if.sh:               UTF-8 Unicode text, with CRLF line terminators
+ifone.sh:            Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+ifthenblock.sh:      Bourne-Again shell script, UTF-8 Unicode text executable, with CRLF line terminators
+input.bat:           DOS batch file, ASCII text, with CRLF line terminators
+kuohaomath.sh:       ASCII text, with CRLF line terminators
+label_loop.bat:      ISO-8859 text, with CRLF line terminators
+locate.sh:           UTF-8 Unicode text
+locateres.txt:       ASCII text
+ls.txt:              ASCII text
+lsdir.txt:           ASCII text
+lsdir_tm.txt:        ASCII text
+lst.txt:             ASCII text
+mkdir.sh:            UTF-8 Unicode text
+myfunc.sh:           ASCII text
+mygrep.txt:          ASCII text
+netactivehost.sh:    ASCII text, with CRLF line terminators
+new.txt:             ASCII text
+newplacesed.txt:     ASCII text, with CRLF line terminators
+newtestsed.txt:      ASCII text, with CRLF line terminators
+open3Baidu.bat:      ISO-8859 text, with CRLF line terminators
+parsedes.sh:         ASCII text
+passwd.sh:           UTF-8 Unicode text
+phonelist.txt:       ASCII text
+phonelistok.txt:     ASCII text
+phonenum.sh:         Bourne-Again shell script, ASCII text executable
+print.sh:            ASCII text, with CRLF line terminators
+proxy.expect:        UTF-8 Unicode text, with CRLF line terminators
+redes.sh:            ASCII text
+regjudge.sh:         ASCII text
+regular_express.txt: ASCII text, with CRLF line terminators
+regvar.sh:           ASCII text
+rename.sh:           UTF-8 Unicode text
+res.txt:             empty
+script1.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+script2.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+script3.sh:          ASCII text, with CRLF line terminators
+sed.txt:             ASCII text, with CRLF line terminators
+sed_grep.txt:        ASCII text, with CRLF line terminators
+sedinplace.sh:       ASCII text, with CRLF line terminators
+sedinplace.txt:      ASCII text, with CRLF line terminators
+sedreplace.sh:       Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+seq.sh:              ASCII text
+sort.sh:             ASCII text
+sort.txt:            ASCII text
+sortdirtm.sh:        ASCII text
+sortfile.sh:         UTF-8 Unicode text
+sshmysj.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+tarspefile.sh:       ASCII text
+testfileattr.sh:     Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+testgrep.sh:         UTF-8 Unicode text
+testgrep.txt:        ASCII text, with CRLF line terminators
+testint.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+testjudge.sh:        Bourne-Again shell script, UTF-8 Unicode text executable, with CRLF line terminators
+testsed.sh:          UTF-8 Unicode text
+testsed.txt:         ASCII text, with CRLF line terminators
+teststrequ.sh:       ASCII text
+testuser.sh:         ASCII text
+token.sh:            UTF-8 Unicode text
+trapexcep.sh:        UTF-8 Unicode text, with CRLF line terminators
+until.sh:            ASCII text
+unzipshellbible.sh:  ASCII text
+vararray.sh:         ASCII text
+vbird.sh:            Bourne-Again shell script, UTF-8 Unicode text executable, with CRLF line terminators
+vitest.txt:          ASCII text
+vitest1.txt:         ASCII text
+wc.txt:              ASCII text, with CRLF line terminators
+wcascii.sh:          UTF-8 Unicode text
+xargs.sh:            UTF-8 Unicode text
