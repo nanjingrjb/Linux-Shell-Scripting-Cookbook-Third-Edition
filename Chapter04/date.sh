@@ -7,15 +7,18 @@
 #!/bin/bash
 #!/bin/bash
         #Filename: time_take.sh
+		set -x
         start=$(date +%s)
+		set +x
 		#for i in `seq 10 `;
-		for i in $(seq 10000) ;
-		do echo $i 
+		for i in $(seq 100000) ;
+		do 
 		sum=$[sum+$i]
 		done
 		echo $sum
-        
+set -x       
         end=$(date +%s)
         difference=$(( end - start))
-        echo Time taken to execute commands is $difference seconds.
+      set +x
+		echo Time taken to execute commands is $difference seconds.
 
