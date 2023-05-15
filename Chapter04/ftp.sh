@@ -12,3 +12,6 @@
 des_path=/sdcard/ftp_from_ieslab/src_gcn 
 serv_path=ftp://192.168.3.251:21/diske/SRC_220/01_PRJ/APP_220/src_A_GCN/*
 wget -r -nH -P $des_path $serv_path	--ftp-user=scusky  --ftp-password=scusky111111 
+
+#将下载后的文件夹删除掉，只保留最终的src_A_GCN文件夹
+echo $des_path
