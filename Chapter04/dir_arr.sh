@@ -7,7 +7,8 @@
 #!/bin/bash
 str=$(pwd)
 #($(cmd))可以得到数组信息
-dirarr=($(echo $str|sed 's/\// /g'))
+dirarr=($(echo $str|tr '/' ' '))
+#dirarr=($(echo $str|sed 's/\// /g'))
 echo ${#dirarr[*]}
 echo ${dirarr[*]}
 
