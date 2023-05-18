@@ -12,3 +12,6 @@ dirarr=($(echo $str|tr '/' ' '))
 echo ${#dirarr[*]}
 echo ${dirarr[*]}
 
+
+ls=$(ls -al|tr -s " "|cut -d " " -f 5)
+echo "$ls"
