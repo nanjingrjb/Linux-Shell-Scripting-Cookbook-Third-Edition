@@ -1,0 +1,2 @@
+ls -al|tr -s " "|cut -d " " -f 5|bash addlst.sh
+ls -al|tr -s " "|cut -d " " -f 5|bash addlst.sh
