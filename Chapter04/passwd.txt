@@ -1,0 +1,2 @@
+user:scusky root
+passwd:scusky scusky
