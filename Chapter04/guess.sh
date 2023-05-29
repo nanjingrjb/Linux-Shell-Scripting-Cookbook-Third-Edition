@@ -6,9 +6,14 @@
 #########################################################################
 #!/bin/bash
 echo "let's guess num between 0 and 100."
-des=$(($RANDOM%100))
-echo "des=$des,please guess it."
+#echo "des=$des,please guess it."
 cnt=0
+cnt_loop=1
+cnt_games=5
+while [ $cnt_games -gt 0 ];
+do
+	echo "you're start $cnt_loop games:"
+des=$(($RANDOM%100))
 read in
 while [ ! $in = $des ];do
 	if((in > $des));then
@@ -30,4 +35,8 @@ done
 
 		echo "you are right."
 		echo "right val is:$des."
-		echo "you'v tried $cnt times."							
+		echo "you'v tried $cnt times."
+		cnt_loop=$((cnt_loop+1))
+		cnt_games=$((cnt_games-1))
+		cnt=0
+done
