@@ -5,7 +5,8 @@
 # Created Time: Mon May 29 18:43:04 2023
 #########################################################################
 #!/bin/bash
-des=$(($RANDOM/100))
+echo "let's guess num between 0 and 100."
+des=$(($RANDOM%100))
 echo "des=$des,please guess it."
 cnt=0
 read in
