@@ -12,7 +12,7 @@ sum()
 {
 	ret=0
    local newarray
-   newarray=(`echo "$@"`)
+   newarray=$(echo "$@")
    #echo "${newarray[*]}"
 	for i in ${newarray[*]};do
 		ret=$((ret+i))
