@@ -23,7 +23,6 @@ forbi1()
 	local mul=0
 	local now=$1
 	local tmp
-	set -x
 	if [ $now -eq 1 ];
 	then echo 1
 	else
@@ -31,7 +30,5 @@ forbi1()
 		mul=$[ $now * $(forbi1 $tmp)]
 		echo $mul
 	fi
-	set +x
 }
 
-forbi1 6
