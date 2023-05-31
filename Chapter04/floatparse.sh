@@ -7,9 +7,17 @@
 #!/bin/bash
 checkint()
 {
+	local left
 	local or=$(echo $1)
-	local left=$(echo $or|sed 's/[[:digit:]]//g')
-	if [ -z $left ];then
+	#截取负数的第一个符号
+	local fst=${or%${or#?}}
+	if [ $fst = '-' ];then
+		or=${or#-}
+	fi
+	 left=$(echo $or|sed 's/[[:digit:]]//g')
+	
+
+	 if [ -z $left ];then
 		echo 0
 	else
 		echo 1
