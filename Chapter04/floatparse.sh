@@ -10,7 +10,8 @@ checkint()
 	local left
 	local or=$(echo $1)
 	#截取负数的第一个符号
-	local fst=${or%${or#?}}
+#	local fst=${or%${or#?}}
+local fst=$(echo $or|cut -c1)
 	if [ $fst = '-' ];then
 		or=${or#-}
 	fi
