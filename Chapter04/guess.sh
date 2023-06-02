@@ -5,6 +5,16 @@
 # Created Time: Mon May 29 18:43:04 2023
 #########################################################################
 #!/bin/bash
+checkint()
+{
+	org=$1
+	left=$(echo $org|sed 's/[[:digit:]]//g')
+	if [ -z $left ];then
+		echo 0
+	else
+		echo 1
+	fi
+}
 echo "let's guess num between 0 and 100."
 #echo "des=$des,please guess it."
 cnt=0
@@ -14,23 +24,30 @@ while [ $cnt_games -gt 0 ];
 do
 	echo "you're start $cnt_loop games:"
 des=$(($RANDOM%100))
+
 read in
-while [ ! $in = $des ];do
+
+
+while [ ! "$in" = "$des" ];do
+if  [ -z "$in" ];then
+		echo input again;
+        read in
+fi
+res=$(checkint $in)
+if [ $res -eq 0 ];
+then
+		cnt=$((cnt+1))
 	if((in > $des));then
 		echo "too big,input litter one:"
-		cnt=$((cnt+1))
 		read in
-	else if((in==$des));then
-		echo "you are right."
-		cnt=$((cnt+1))
-		exit 0
-	else
-
-		cnt=$((cnt+1))
+	elif((in < $des));then
 		echo "too little,input bigger one:"
 		read in
 	fi
-	fi
+else
+	echo "invalid num,please input int."
+	read in
+fi
 done
 
 		echo "you are right."
