@@ -20,3 +20,18 @@ issub()
 	fi
 
 }
+
+addpath()
+{
+	#更新$PATH
+	source /etc/profile
+	ret=$(issub $PATH $(pwd))
+  
+	if [ !  $ret -eq 0 ];then
+		echo "exist dir  $(pwd) in \$PATH. "
+	else
+		echo "add $(pwd) to \$PATH."
+		echo export PATH=\"$(pwd):'$PATH'\" >> /etc/profile
+		source /etc/profile
+	fi
+}
