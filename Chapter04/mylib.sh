@@ -24,7 +24,6 @@ issub()
 addpath()
 {
 	#更新$PATH
-	source /etc/profile
 	ret=$(issub $PATH $(pwd))
   
 	if [ !  $ret -eq 0 ];then
@@ -32,6 +31,23 @@ addpath()
 	else
 		echo "add $(pwd) to \$PATH."
 		echo export PATH=\"$(pwd):'$PATH'\" >> /etc/profile
-		source /etc/profile
 	fi
 }
+
+mybc()
+{
+
+if [ "$1" = "-p" ] ; then
+  precision=$2
+  shift 2
+else
+  precision=2  # default
+fi
+bc -q << EOF
+scale=$precision
+$*
+quit
+EOF
+}
+
+
