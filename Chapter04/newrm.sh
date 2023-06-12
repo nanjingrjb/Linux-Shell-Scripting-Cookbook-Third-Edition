@@ -44,7 +44,7 @@ if [ ! -d $archivedir ] ; then
   mkdir $archivedir
   chmod 700 $archivedir# a little bit of privacy, please
 fi
-
+set -x
 for arg 
 do
   newname="$archivedir/$(date "+%S.%M.%H.%d.%m").$(basename "$arg")"
@@ -52,5 +52,6 @@ do
     $copy "$arg" "$newname"	
   fi
 done
+set +x
 
 exec $realrm $flags "$@"        # our shell is replaced by realrm
