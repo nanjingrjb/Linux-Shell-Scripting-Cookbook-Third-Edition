@@ -5,3 +5,20 @@ scusky@scusky:/mnt/e/mybash/Linux-Shell-Scripting-Cookbook-Third-Edition$ !1509
  command not found 
 mybash/Linux-Shell
 S-Insert><S-Insert>
+history|headhistory|head
+
+
+
+
+history|headhistory|head
+
+
+history|head
+
+
+
+
+
+history|head
+
+history|head
