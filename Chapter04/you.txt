@@ -20,5 +20,8 @@ history|head
 
 
 history|head
+bash readfile.sh readfile.sh
+history|headbash readfile.sh readfile.sh
 
-history|head
+
+bash readfile.sh readfile.sh

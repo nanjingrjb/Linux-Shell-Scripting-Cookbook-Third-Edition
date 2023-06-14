@@ -1,0 +1,27 @@
+#1:ls -al|tr -s " "|cut -d " " -f 5|bash addlst.sh
+#2:ls -al|tr -s " "|cut -d " " -f 5|bash addlst.sv
+#3:vim的使用技巧，如果要拷贝history中的命令到vim中（如日志）,可以执行如下操作： 1）在vim命令行下，执行:!bash进入到终端命令行模式； 2）history查看需要拷贝的命令，找到编号，并执行 3）在执行后，鼠标拷贝对应的命令,这样就可以存入系统剪切板中； 4）exit命令，返回到要编辑的vim中； 5）按照shift '=p3个组合键，就可以将命令粘贴. ls -al|tr -s " "|cut -d " " -f 5|bash addlst.shh
+#4:scusky@scusky:/mnt/e/mybash/Linux-Shell-Scripting-Cookbook-Third-Edition$ !1509
+#5:command not found
+#6:mybash/Linux-Shell
+#7:S-Insert><S-Insert>
+#8:history|headhistory|head
+#9:
+#10:
+#11:
+#12:
+#13:history|headhistory|head
+#14:
+#15:
+#16:history|head
+#17:
+#18:
+#19:
+#20:
+#21:
+#22:history|head
+#23:bash readfile.sh readfile.sh
+#24:history|headbash readfile.sh readfile.sh
+#25:
+#26:
+#27:bash readfile.sh readfile.sh
