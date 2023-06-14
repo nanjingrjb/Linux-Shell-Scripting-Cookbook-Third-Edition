@@ -20,8 +20,13 @@ history|head
 
 
 history|head
+<<<<<<< HEAD
 bash readfile.sh readfile.sh
 history|headbash readfile.sh readfile.sh
 
 
 bash readfile.sh readfile.sh
+=======
+
+history|head
+>>>>>>> 32035aaf41ec7d36d9b39fe38aeb2237af068fe7
