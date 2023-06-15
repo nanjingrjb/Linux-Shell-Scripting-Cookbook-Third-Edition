@@ -12,7 +12,11 @@
 splitstr()
 {
 	str=$(echo $1)
-	for ((i=0;i<${#str};i++));do  echo ${str:i:1};done
+	if [ -z $str ];then
+		echo "usage:${0##*/} string"
+	else
+	for ((i=0;i<${#str};i++));do  echo ${str:$i:1};done
+	fi
 }
 readstr()
 {
