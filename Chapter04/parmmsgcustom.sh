@@ -10,6 +10,8 @@
 #
 # 解析参数时使用自定义错误消息
 #
+#
+echo "now shell name is:${0##*/}"
 aflag=
 bflag=
 # 因为不想getopts生成错误消息，
