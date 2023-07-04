@@ -5,4 +5,4 @@
 # Created Time: Wed May 10 09:28:39 2023
 #########################################################################
 #!/bin/bash
-for i in $(cat info.txt);do echo "this is $i";done
+for i,j in $(cat info.txt);do echo " $i,$j";done
