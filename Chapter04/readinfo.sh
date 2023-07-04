@@ -5,8 +5,4 @@
 # Created Time: Wed May 10 09:28:39 2023
 #########################################################################
 #!/bin/bash
-source info.txt
-echo "id = $id"
-echo "name = $name"
-echo "phone = $phone"
-
+for i in $(cat info.txt);do echo "this is $i";done
