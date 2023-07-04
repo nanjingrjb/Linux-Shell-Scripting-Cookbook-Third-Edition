@@ -5,4 +5,7 @@
 # Created Time: Wed May 10 09:28:39 2023
 #########################################################################
 #!/bin/bash
-for i,j in $(cat info.txt);do echo " $i,$j";done
+for i in $(cat info.txt);do echo " $i";done
+
+
+gawk -d '{print "index="$1,"name=" $2;}' info.txt
