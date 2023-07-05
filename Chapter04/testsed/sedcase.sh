@@ -36,3 +36,5 @@ echo -e "this is\nThis is\n"|sed 's/[Tt]his is/there are/g'
 
 echo '采用正则表达式推导，替换:'
 echo -e "this is\nThis is\nThis is\n"|sed -e '/[Tt]his/s/[Tt]his is/There are/g'
+echo '采用指定范围行号，替换:'
+echo -e "this is\nThis is\nThis is\n"|sed -e '2,$s/[Tt]his is/There are/g'
