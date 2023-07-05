@@ -32,3 +32,4 @@ fi
 done
 	
 
+echo -e "this is\nThis is\n"|sed 's/[Tt]his is/there are/g'
