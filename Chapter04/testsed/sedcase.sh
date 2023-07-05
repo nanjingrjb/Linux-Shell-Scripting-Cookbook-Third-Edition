@@ -5,7 +5,7 @@
 # Created Time: Wed Jul  5 07:41:13 2023
 #########################################################################
 #!/bin/bash
-opp=('g'  '1'  'L1' 'j' 'p')
+opp=('g'  '1'  'L1' 'second' 'p')
 echo "原始数据:"
 cat data4.txt
 valid=1
@@ -19,6 +19,9 @@ do
 				res=$(sed 's/test/trial/' data4.txt);;
 		L1)echo "第一行全替换:" 
 			res=$(sed '1s/test/trial/g' data4.txt);;
+		second)echo "根据指定的字符串寻找替换:" 
+			res=$(sed '/second/s/test/trial/' data4.txt);;
+			
 		*)echo "无效选项。"
 			valid=0;; 
 esac
