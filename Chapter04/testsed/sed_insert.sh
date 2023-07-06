@@ -5,7 +5,7 @@
 # Created Time: Thu Jul  6 07:17:10 2023
 #########################################################################
 #!/bin/bash
-opp=('i' 'a' 'si' 'sa' 'sd' 'qd' 'nd' 'n1n2d')
+opp=('i' 'a' 'si' 'sa' 'sd' 'qd' 'nd' 'n1n2d' 'n3d') 
 
 echo "原始数据:"
 cat data4.txt
@@ -30,6 +30,8 @@ do
 			res=$(sed '2d' data4.txt);;
 		n1n2d) echo "指定数字区间删除:"
 			res=$(sed '2,$d' data4.txt);;
+		n3d) echo "指定第2-4行删除:"
+			res=$(sed '2,4d' data4.txt);;
 		*)valid=0;;
 	esac
 	if [ ! $valid ==  0 ]
