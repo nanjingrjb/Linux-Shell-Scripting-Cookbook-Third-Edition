@@ -5,7 +5,7 @@
 # Created Time: Thu Jul  6 07:17:10 2023
 #########################################################################
 #!/bin/bash
-opp=('i' 'a' 'si' 'sa' 'sd' 'qd' 'nd' 'n1n2d' 'n3d') 
+opp=('i' 'a' 'si' 'sa' 'sd' 'qd' 'nd' 'n1n2d' 'n3d' 'nc' 'sc' 'n1n2c')  
 
 echo "原始数据:"
 cat data4.txt
@@ -32,6 +32,12 @@ do
 			res=$(sed '2,$d' data4.txt);;
 		n3d) echo "指定第2-4行删除:"
 			res=$(sed '2,4d' data4.txt);;
+		nc) echo "修改指定行:"
+			res=$(sed '2c\I Change second line.' data4.txt);;
+		sc) echo "修改指定字符对应行:"
+			res=$(sed '/test/c\I Change line including test.' data4.txt);;
+		n1n2c) echo "修改指定行区间:"
+			res=$(sed '2,$c\I Change second line.' data4.txt);;
 		*)valid=0;;
 	esac
 	if [ ! $valid ==  0 ]
