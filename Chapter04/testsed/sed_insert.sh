@@ -5,7 +5,7 @@
 # Created Time: Thu Jul  6 07:17:10 2023
 #########################################################################
 #!/bin/bash
-opp=('i' 'a' 'si' 'sa' 'sd' 'qd' 'nd' 'n1n2d' 'n3d' 'nc' 'sc' 'n1n2c')  
+opp=('i' 'a' 'si' 'sa' 'sd' 'qd' 'nd' 'n1n2d' 'n3d' 'nc' 'sc' 'n1n2c' 'y')  
 
 echo "原始数据:"
 cat data4.txt
@@ -38,6 +38,8 @@ do
 			res=$(sed '/test/c\I Change line including test.' data4.txt);;
 		n1n2c) echo "修改指定行区间:"
 			res=$(sed '2,$c\I Change second line.' data4.txt);;
+		y) echo "字符映射替换:"
+			res=$(sed 'y/test/west/' data4.txt);;
 		*)valid=0;;
 	esac
 	if [ ! $valid ==  0 ]
