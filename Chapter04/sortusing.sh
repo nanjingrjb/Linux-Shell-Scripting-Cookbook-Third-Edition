@@ -9,13 +9,6 @@ echo "sort 用于处理列表输入"
 
 seq 1 9|sort -nr
 
-#将字符串转为列表
-changestr2lst()
-{
-	for i in $1;
-	do echo $i
-	done
-}
 changearr2lst()
 {
 	for i in $*;
@@ -23,7 +16,7 @@ changearr2lst()
 	done
 }
 
-changestr2lst "1 3 -56 20 36 87"|sort -nr
+changearr2lst "1 3 -56 20 36 87"|sort -nr
 
 arr=(1 3 -56 20 36 87)
 
