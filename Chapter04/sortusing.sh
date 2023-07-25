@@ -16,5 +16,15 @@ changestr2lst()
 	do echo $i
 	done
 }
+changearr2lst()
+{
+	for i in $*;
+	do echo $i
+	done
+}
 
 changestr2lst "1 3 -56 20 36 87"|sort -nr
+
+arr=(1 3 -56 20 36 87)
+
+changearr2lst ${arr[*]}|sort -nr
