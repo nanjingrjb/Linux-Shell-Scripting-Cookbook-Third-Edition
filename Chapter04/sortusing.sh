@@ -15,9 +15,21 @@ changearr2lst()
 	do echo $i
 	done
 }
+#单个字符串转化为字符列表
+changestr2lst()
+{
+	str=$*
+	len=${#str}
+	echo "$str,${#str}"
+}
+
 
 changearr2lst "1 3 -56 20 36 87"|sort -nr
 
-arr=(1 3 -56 20 36 87)
+arr1=(1 3 -56 20 36 87)
 
-changearr2lst ${arr[*]}|sort -nr
+changearr2lst ${arr1[*]}|sort -nr
+arr2="thisisatest"
+
+echo $arr2|fold -w 1|sort -nr
+
