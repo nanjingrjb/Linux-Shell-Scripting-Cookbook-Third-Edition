@@ -85,12 +85,11 @@ alias lth='ls -lt|head'
 alias l='ls -CF'
 alias mypy='cd /sdcard/111py/Li*/C*04'
 alias bakrc='cp ~/.bashrc ~/.bashrcbak'
-alias ls='ls -l --time-style=long-iso'
-alias gita='git add *.sh *.txt'
+alias gita='git add *.sh *.txt *.py'
 alias gitc='git commit -a'
 alias gitl='git pull'
 alias gith='git push'
-alias py3='python3'
+alias py3='python'
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -107,3 +106,10 @@ service cron start
 #    . /etc/bash_completion
 #fi
 source /sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04/mylib.sh
+alias rm="bash /sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04/newrm.sh"
+alias unrm="bash /sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04/unrm.sh"
+alias py="cd /sdcard/111py/py"
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && bash  /usr/share/bash-completion/bash_completion
+export PATH=/root:/sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/data/data/com.termux/files/usr/bin:/system/bin:/system/xbin:/data/data/com.termux/files/usr/lib/python3.11/site-packages
+alias daten="date '+%Y%m%d%H%M%S'"
