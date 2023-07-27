@@ -17,9 +17,4 @@ do
 done
 
 echo "using stdout:"
-lst=$(ls *.txt|xargs file |grep code|gawk '{print $1}'|tr -d ":")
-
-for i in  $lst;
-do echo $i
-done
-
+ls *.txt|xargs file |grep code|gawk '{print $1}'|tr -d ":"|xargs -I {} cp {} ~/
