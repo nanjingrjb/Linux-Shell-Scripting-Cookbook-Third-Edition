@@ -31,7 +31,7 @@ wcfile()
 	    key="$3"
 	fi
 
-	find $dir  -type $type -name "*.${key}" 
+	find $dir  -type $type -name "*${key}*" 
 
 }
 wcfile $*
