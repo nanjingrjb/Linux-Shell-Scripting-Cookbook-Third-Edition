@@ -26,7 +26,7 @@ sumint()
 		then echo "input invalid int."
 			exit
 		else
-			res=$((res+$i))
+			res=$((res+i))
 		fi
 	done
 	echo "sum is $res"
