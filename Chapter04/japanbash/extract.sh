@@ -52,6 +52,9 @@ extract_one()
     *.gz)
       gzip -dc -- "$file" > "$base"
       ;;
+    *.rar)
+      unrar x "$file"  "${base}/" 
+      ;;
     *.bz2)
       bzip2 -dc -- "$file" > "$base"
       ;;
