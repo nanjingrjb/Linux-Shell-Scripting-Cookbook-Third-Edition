@@ -14,3 +14,4 @@ findstr()
 }
 
 bash conditionjudge.sh "this is your book" "[[:space:]]is"&&echo ok||echo no
+[ -f rjb ]&&rm rjb||touch rjb
