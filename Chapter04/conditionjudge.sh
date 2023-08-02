@@ -14,7 +14,9 @@ findstr()
 }
 findstr2()
 {
-	[[ ]$1==$2 ]] && echo ok ||echo not match
+	[[ $1 =~ $2 ]] && echo ok ||echo not match
 }
 [ -f rjb ]&&rm rjb||touch rjb
 findstr2 "$@"
+
+[[ $1 =~ $2 ]]&&echo yes||echo no
