@@ -12,6 +12,9 @@ findstr()
 	echo "$str"|grep -E "$fstr" &&echo "match" ||echo "no find $fstr in $str"
 
 }
-
-bash conditionjudge.sh "this is your book" "[[:space:]]is"&&echo ok||echo no
+findstr2()
+{
+	[[ ]$1==$2 ]] && echo ok ||echo not match
+}
 [ -f rjb ]&&rm rjb||touch rjb
+findstr2 "$@"
