@@ -10,7 +10,7 @@ findfile()
 	reg=$1
 	size=$2
 	echo "\$1=$1"
-find ./  -type f -name "$1" -size -$2
+find ./  -type f -name "$reg" -size -$size
 
 }
 
