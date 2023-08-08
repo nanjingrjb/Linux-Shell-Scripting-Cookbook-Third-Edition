@@ -12,8 +12,11 @@ maxspace()
 	file=info_${mydate}
 #	dir='/var/log /root'
     dir=$1
+    configfile=config.txt
 	exec > $file
-	for i in $dir 
+	exec <$configfile
+	read i
+	while [ $? -eq 0 ]
 	do
 		echo ""
 		echo "the $i directory:"
@@ -23,7 +26,7 @@ maxspace()
 		sed '='|
 		sed 'N;s/\n/ /'|
 		gawk '{printf $1"\t"$2"\t"$3"\n"}'||echo "$i dir not found.\n"
-	
+    read i
 	done
 }
 
