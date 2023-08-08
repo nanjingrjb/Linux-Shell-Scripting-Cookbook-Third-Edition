@@ -25,7 +25,7 @@ maxspace()
 		head -n 10|
 		sed '='|
 		sed 'N;s/\n/ /'|
-		gawk '{printf $1"\t"$2"\t"$3"\n"}'||echo "$i dir not found.\n"
+		gawk '{printf $1"\t"$2"\t"$3"\n"}'||echo "$i dir not found.\n" >/dev/null
     read i
 	done
 }
