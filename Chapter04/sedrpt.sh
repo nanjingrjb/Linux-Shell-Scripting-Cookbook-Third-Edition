@@ -10,15 +10,21 @@ maxspace()
 {
 	mydate=$(date "+%Y%m%d")
 	file=info_${mydate}
-	dir=$1
+#	dir='/var/log /root'
+    dir=$1
 	exec > $file
-	du -S "$dir"|
+	for i in $dir 
+	do
+		echo ""
+		echo "the $i directory:"
+	[[ -d "$i" ]]&&du -S "$i"|
 		sort -rn|
 		head -n 10|
 		sed '='|
 		sed 'N;s/\n/ /'|
-		gawk '{printf $1"\t"$2"\t"$3"\n"}'
-	cat $file
+		gawk '{printf $1"\t"$2"\t"$3"\n"}'||echo "$i dir not found.\n"
+	
+	done
 }
 
 maxspace "$@"
