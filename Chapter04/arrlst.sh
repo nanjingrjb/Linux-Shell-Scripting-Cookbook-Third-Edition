@@ -11,3 +11,8 @@ do
 done
 echo "${lst[@]}"
 
+for i in $(seq 1 5)
+do
+	lst1="$lst1 $i"
+done
+echo "new method is:${lst1[@]}"
