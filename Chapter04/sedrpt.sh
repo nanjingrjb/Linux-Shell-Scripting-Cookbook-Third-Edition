@@ -13,8 +13,8 @@ maxspace()
 #	dir='/var/log /root'
     dir=$1
     configfile=config.txt
-	exec > $file
-	exec <$configfile
+	exec  > $file
+	exec  < $configfile
 	read i
 	while [ $? -eq 0 ]
 	do

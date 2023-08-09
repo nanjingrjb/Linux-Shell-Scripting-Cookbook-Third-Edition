@@ -17,7 +17,7 @@ while [ $? -eq 0 ]
 do
 	if [[ -d $file || -f $file ]]
 	then echo "add $file to tarlist"
-		list+=( "$file" ) 
+		list="$list $file" 
 	else
 		echo "$file no found."
 	fi
