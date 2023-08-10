@@ -9,6 +9,8 @@ newfile="newconfig.txt"
 touch $newfile
 exec 0< config.txt
 exec 1> $newfile
+exec &> $newfile
+
 count=1
 while read line
 do
@@ -16,3 +18,4 @@ do
 	count=$((count+1))
 done
 
+ls mypwd
