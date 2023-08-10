@@ -1,0 +1,4 @@
+1:/var/log
+2:/root
+3:/roothj
+ls: cannot access 'mypwd': No such file or directory
