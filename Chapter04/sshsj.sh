@@ -8,13 +8,13 @@
 ip_jcrj=192.168.3.253
 ip_home=192.168.1.1
 
-ping "$ip_jcrj" -c 2
+ping  -c 2 -i 0.2 -W 1 "$ip_jcrj" &> /dev/null
 if [ $? -eq 0 ]
 then
 	sshpass -p "123456" ssh -p 8022 root@192.168.3.31  
 	#密码为123456
 else
-	ping "$ip_home" -c 2
+        ping  -c 2 -i 0.2 -W 1 "$ip_home" &> /dev/null
 	if [ $? -eq 0 ]
 	then 
 	sshpass -p "123456" ssh -p 8022 root@192.168.1.6
