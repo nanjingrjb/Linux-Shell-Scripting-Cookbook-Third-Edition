@@ -5,5 +5,20 @@
 # Created Time: Mon Jul 31 13:13:02 2023
 #########################################################################
 #!/bin/bash
-sshpass -p "123456" ssh -p 8022 root@192.168.3.31  
-#密码为123456
+ip_jcrj=192.168.3.253
+ip_home=192.168.1.1
+
+ping "$ip_jcrj" -c 2
+if [ $? -eq 0 ]
+then
+	sshpass -p "123456" ssh -p 8022 root@192.168.3.31  
+	#密码为123456
+else
+	ping "$ip_home" -c 2
+	if [ $? -eq 0 ]
+	then 
+	sshpass -p "123456" ssh -p 8022 root@192.168.1.6
+        fi
+fi
+
+
