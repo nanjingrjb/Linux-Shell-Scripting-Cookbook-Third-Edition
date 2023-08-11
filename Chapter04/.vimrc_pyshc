@@ -1,11 +1,11 @@
 syntax on
 set nocompatible
-"set number
+set number
 filetype on
 set history=1000
 set background=dark
-"set autoindent
-"set smartindent
+set autoindent
+set smartindent
 set tabstop=4
 set shiftwidth=4
 set showmatch
@@ -20,32 +20,6 @@ if &term=="xterm"
     set t_Sb=^[[4%dm
     set t_Sf=^[[3%dm
 endif
-function AddFileInformation_php()
-      let infor = "<?php\n"
-      \." ***************************************************************************\n"
-      \." * \n"
-      \." * Copyright (c) 2014 \n"
-      \." *  \n"
-      \." **************************************************************************/ \n"
-      \." \n"
-      \." \n"
-      \." \n"
-      \."/** \n"
-      \." * @file:".expand("%")." \n"
-      \." * @author your name(Luolired@163.com) \n"
-      \." * @date ".strftime("%Y-%m-%d %H:%M")." \n"
-      \." * @version 1.0  \n"
-      \." **/ \n"
-      \." \n"
-      \." \n"
-      \." \n"
-      \." \n"
-      \." \n"
-      \." \n"
-      \."?>"
-      silent  put! =infor
-endfunction
-autocmd BufNewFile *.php call AddFileInformation_php()
 
 function AddFileInformation_sh()
       let infor = "#!/bin/bash\n"
@@ -53,7 +27,7 @@ function AddFileInformation_sh()
       \."# ***************************************************************************\n"
       \."# * \n"
       \."# * @file:".expand("%")." \n"
-      \."# * @author:Luolired@163.com \n"
+      \."# * @author:nanjingrjb@gmail.com \n"
       \."# * @date:".strftime("%Y-%m-%d %H:%M")." \n"
       \."# * @version 1.0  \n"
       \."# * @description: Shell script \n"
@@ -74,7 +48,7 @@ function AddFileInformation_py()
       \."# ************************************************************************ \n"
       \."# * \n"
       \."# * @file:".expand("%")." \n"
-      \."# * @author:Luolired@163.com \n"
+      \."# * @author:nanjingrjb@gmail.com \n"
       \."# * @date:".strftime("%Y-%m-%d %H:%M")." \n"
       \."# * @version 1.0  \n"
       \."# * @description: Python Script \n"
@@ -95,7 +69,7 @@ function AddFileInformation_c()
       \."# ************************************************************************ \n"
       \."# * \n"
       \."# * @file:".expand("%")." \n"
-      \."# * @author:Luolired@163.com \n"
+      \."# * @author:nanjingrjb@gmail.com \n"
       \."# * @date:".strftime("%Y-%m-%d %H:%M")." \n"
       \."# * @version 1.0  \n"
       \."# * @description: Python Script \n"
@@ -106,6 +80,11 @@ function AddFileInformation_c()
       \."#include <stdio.h>\n"
       \."#include <stdlib.h>\n"
       \."\n"
+      \."\n"
+      \."void main()\n"
+	  \."{\n"
+      \."\n"
+	  \."}\n"
       \."\n"
       silent  put! =infor
 endfunction
