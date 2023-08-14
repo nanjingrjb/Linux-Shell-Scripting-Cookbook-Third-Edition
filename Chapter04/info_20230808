@@ -1,0 +1,24 @@
+
+the /var/log directory:
+1	1104	/var/log
+2	664	/var/log/apt
+3	44	/var/log/samba
+4	8	/var/log/journal
+5	4	/var/log/sysstat
+6	4	/var/log/samba/cores/smbd
+7	4	/var/log/samba/cores/samba-bgqd
+8	4	/var/log/samba/cores/nmbd
+9	4	/var/log/samba/cores
+10	4	/var/log/pure-ftpd
+
+the /root directory:
+1	242724	/root
+2	195472	/root/VSCode-linux-x64
+3	57824	/root/.cache/pip/http/8/e/2/7/e
+4	26620	/root/VSCode-linux-x64/locales
+5	22328	/root/.cache/tracker3/files
+6	20328	/root/VSCode-linux-x64/resources/app/extensions/node_modules/typescript/lib
+7	19824	/root/vim-plug/ale/.git/objects/pack
+8	16556	/root/VSCode-linux-x64/bin
+9	15364	/root/VSCode-linux-x64/resources/app/node_modules.asar.unpacked/node-vsce-sign/bin
+10	15128	/root/VSCode-linux-x64/resources/app
