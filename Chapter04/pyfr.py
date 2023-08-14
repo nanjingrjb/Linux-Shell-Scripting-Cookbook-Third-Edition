@@ -14,7 +14,8 @@
 import os,sys
 
 data=[]
-with open("fr.txt",'r') as f:
+filename=sys.argv[1]
+with open(filename,'r') as f:
     for line in f:
         if line.isspace():
             pass
