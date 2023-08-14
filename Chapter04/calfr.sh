@@ -42,6 +42,7 @@ calfr()
 	fname=$1
 	sum=0
 	exec <"$fname"
+set -x
 	while read info
 	do
 		if [[ ! -z $info ]]
@@ -55,6 +56,7 @@ calfr()
 		#sum=$a
 	fi
 	done
+set +x
 	echo $sum
 }
 
