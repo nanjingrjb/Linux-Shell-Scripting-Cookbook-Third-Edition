@@ -19,14 +19,19 @@ isrouteok()
     if [ -z $des ];then
 		echo "usage: $0 ip "
 	else
-   ping -c 10 -w 2 "$des" > /dev/null
+   ping  -w 2 "$des" > /dev/null
    if [[ "$?" == 0 ]];then
-	   echo "$des route ok."
+	   echo 1
    else
-	   echo "$des route failed."
+	   echo 0
    fi
    set +x
 	fi
 }
 
-isrouteok "$@"
+res=$(isrouteok "$@")
+if [[ $res == 1 ]];then
+	echo "you can visit $1."
+else
+	echo "$1 no  found."
+fi
