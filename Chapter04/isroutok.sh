@@ -29,9 +29,12 @@ isrouteok()
 	fi
 }
 
+testroute()
+{
 res=$(isrouteok "$@")
 if [[ $res == 1 ]];then
 	echo "you can visit $1."
 else
 	echo "$1 no  found."
 fi
+}
