@@ -35,3 +35,35 @@ echo "$a-$b=$(bc << EOF
 EOF
 )"
 
+
+
+bccal_in()
+{
+	c=$(bc<<EOF
+	scale=4
+a=1
+b=2.3
+a*b+a+b
+EOF
+)
+echo "inside is :$c"
+}
+
+
+
+
+bccal_out()
+{
+	a=1
+	b=2.3
+	c=$(bc<<EOF
+	scale=4
+	$a*$b+$a+$b
+EOF
+)
+echo "outside add '$' $c"
+}
+
+bccal_in
+bccal_out
+

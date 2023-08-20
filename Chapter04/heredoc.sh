@@ -25,3 +25,23 @@ Because I am in here doc.
 test
 
 echo "ok,Can you see me now?"
+
+
+echo "other example"
+:<<myline
+if you can see it please tell me.
+I wish it works,
+but i am not sure.
+Thank you for your work.
+myline
+echo "I am out now."
+set -x
+m=$(bc << EOF
+scale=4
+a=4
+b=1.2
+a*b
+EOF
+)
+set +x
+echo $m
