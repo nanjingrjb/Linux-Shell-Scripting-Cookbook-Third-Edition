@@ -44,4 +44,4 @@ a*b
 EOF
 )
 set +x
-echo $m
+echo "$m"
