@@ -16,3 +16,14 @@
 
 find ./ -maxdepth 1 -type d -not -path "./"
 
+#寻找带.的隐藏文件，可以采用ls |grep的形式，也可采用find寻找模式
+echo "ls -A|grep '^\.',res is:"
+		ls -A|grep '^\.'
+
+
+echo "find ./ -maxdepth 1 -type f -name '.*',res is:"
+		find ./ -maxdepth 1 -type f -name '.*'
+
+echo "找到当前目录下非隐藏的文件夹，对属性取反，在属性前加-not或!"		
+find  ./ -type d ! -name  '.*'   -not -path './' -maxdepth 1
+
