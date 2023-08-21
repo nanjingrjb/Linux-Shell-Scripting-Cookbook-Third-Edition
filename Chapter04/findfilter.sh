@@ -26,4 +26,7 @@ echo "find ./ -maxdepth 1 -type f -name '.*',res is:"
 
 echo "找到当前目录下非隐藏的文件夹，对属性取反，在属性前加-not或!"		
 find  ./ -type d ! -name  '.*'   -not -path './' -maxdepth 1
+ls -Al |grep -E '^d'|gawk '{print $9'}
 
+
+ls -al |grep -E '^d' |gawk '{print $9'}|grep -Ev '\.'
