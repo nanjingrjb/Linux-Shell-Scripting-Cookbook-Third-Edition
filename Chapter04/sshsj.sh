@@ -8,7 +8,6 @@
 ip_jcrj=192.168.3.251
 ip_home=192.168.1.1
 
-set -x
 ping  -c 2 -i 0.2 -W 1 "$ip_jcrj" &> /dev/null
 if [ $? -eq 0 ]
 then
@@ -21,5 +20,4 @@ else
 	sshpass -p "123456" ssh -p 8022 root@192.168.1.6
         fi
 fi
-set +x
 
