@@ -89,7 +89,7 @@ alias gita='git add *.sh *.txt *.py'
 alias gitc='git commit -a'
 alias gitl='git pull'
 alias gith='git push'
-alias py3='python'
+alias py3='/usr/bin/python3'
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -99,6 +99,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 service cron start
 #service vsftpd start
+service smbd start
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -106,8 +107,6 @@ service cron start
 #    . /etc/bash_completion
 #fi
 source /sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04/mylib.sh
-alias rm="bash /sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04/newrm.sh"
-alias unrm="bash /sdcard/111py/Linux-Shell-Scripting-Cookbook-Third-Edition/Chapter04/unrm.sh"
 alias py="cd /sdcard/111py/py"
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && bash  /usr/share/bash-completion/bash_completion
