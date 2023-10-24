@@ -15,3 +15,5 @@
 
 sed  -E -f  sedfunc.sh sed.txt|nl
 grep -Eo '\b[0-9]{1,}\b' sed.txt|wc -l
+
+sed '/^\s$/d' sed.txt|sed -E 's/\b[0-9]{1,}\b/x/g'|sed '/cf/a\rjb'
