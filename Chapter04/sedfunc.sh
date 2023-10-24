@@ -16,3 +16,7 @@
 s/end/start/g
 s/[0-9]{1,}/x/g
 /^[[:space:]]*$/d
+
+1,3a\rjb
+/rjb/d
+/star/d

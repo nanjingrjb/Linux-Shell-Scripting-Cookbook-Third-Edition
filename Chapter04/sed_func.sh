@@ -13,5 +13,5 @@
 
 
 
-sed  -Ei -f  sedfunc.sh sed.txt
+sed  -E -f  sedfunc.sh sed.txt|nl
 
