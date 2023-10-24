@@ -2,9 +2,9 @@
 
 # ***************************************************************************
 # * 
-# * @file:sedfunc.sh 
+# * @file:grep_num_123.sh 
 # * @author:nanjingrjb@gmail.com 
-# * @date:2023-10-23 18:01 
+# * @date:2023-10-24 09:55 
 # * @version 1.0  
 # * @description: Shell script 
 # * @Copyright (c)  all right reserved 
@@ -12,11 +12,7 @@
 #**************************************************************************/ 
 
 
-$a\start
-s/end/start/g
-s/[0-9]{1,}/x/g
-/^[[:space:]]*$/d
 
-1,3a\rjb
-/rjb/d
-/star/d
+
+echo "寻找一位数:grep -En '\<[0-9]{1}\>' a.txt"
+grep -En '\<[0-9]{1}\>' a.txt
