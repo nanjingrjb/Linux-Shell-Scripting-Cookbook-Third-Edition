@@ -25,4 +25,16 @@ done
 echo $cnt
 
 echo "采用gawk解析，带分隔符的数据"
-echo $PATH|gawk -F: '{print $1,"wc="NF}'
+anum=$(echo $PATH|gawk -F: '{print NF}')
+echo "anum=$anum"
+
+echo $PATH|gawk 'BEGIN{FS=":"; OFS="\n"} {
+for (i=1;i<NF;i++)
+print $i
+}
+'
+
+
+
+num=$(echo $PATH|grep -Eo ":"|wc -l)
+echo "num=$[num+1]"
