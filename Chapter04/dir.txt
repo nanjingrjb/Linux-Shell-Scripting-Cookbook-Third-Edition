@@ -1,76 +1,64 @@
--rw-rw---- 1 root aid_everybody     0 2023-03-30 08:43 90
--rw-rw---- 1 root aid_everybody  1215 2023-04-15 18:02 crontab
--rw-rw---- 1 root aid_everybody  1171 2023-04-10 18:42 SwitchIP.bat
--rw-rw---- 1 root aid_everybody   201 2023-04-09 17:34 atd.sh
--rw-rw---- 1 root aid_everybody   126 2023-03-31 16:32 bcfloat.sh
--rw-rw---- 1 root aid_everybody  1215 2023-04-15 18:02 crontab
--rw-rw---- 1 root aid_everybody  1215 2023-04-15 18:02 crontab
--rw-rw---- 1 root aid_everybody    26 2023-04-09 15:06 crontab.sh
--rw-rw---- 1 root aid_everybody 14471 2023-04-11 06:58 crontab.txt
--rw-rw---- 1 root aid_everybody   110 2023-03-31 16:32 dateformat.sh
--rw-rw---- 1 root aid_everybody    45 2023-04-10 22:18 deldir.sh
--rw-rw---- 1 root aid_everybody     0 2023-04-16 16:55 dir.txt
--rw-rw---- 1 root aid_everybody   638 2023-04-14 07:44 dirbin.txt
--rw-rw---- 1 root aid_everybody  4218 2023-04-14 06:54 dirinfo.txt
--rw-rw---- 1 root aid_everybody   255 2023-03-31 16:32 exprmul.sh
--rw-rw---- 1 root aid_everybody   555 2023-04-11 18:13 find.sh
--rw-rw---- 1 root aid_everybody   199 2023-04-11 08:14 findpdf.sh
--rw-rw---- 1 root aid_everybody   118 2023-04-15 07:16 foo.txt
--rw-rw---- 1 root aid_everybody    74 2023-03-31 16:32 grep.sh
--rw-rw---- 1 root aid_everybody   584 2023-04-15 07:20 grepMakeDir.sh
--rw-rw---- 1 root aid_everybody   391 2023-04-12 17:48 grep_kuohao.sh
--rw-rw---- 1 root aid_everybody   106 2023-04-09 17:34 grepawk.sh
--rw-rw---- 1 root aid_everybody   319 2023-04-14 07:40 grepdir.sh
--rw-rw---- 1 root aid_everybody    74 2023-04-12 17:48 grepphone.sh
--rw-rw---- 1 root aid_everybody   313 2023-04-13 00:54 greprm.sh
--rw-rw---- 1 root aid_everybody   382 2023-04-13 06:49 greprmpho.sh
-drwxrwx--- 2 root aid_everybody  4096 2023-04-13 01:03 greptest
--rw-rw---- 1 root aid_everybody  2205 2023-04-12 17:48 guidang.sh
--rw-rw---- 1 root aid_everybody  2239 2023-04-12 17:48 guidang_bak.sh
--rw-rw---- 1 root aid_everybody   510 2023-03-31 16:32 if.sh
--rw-rw---- 1 root aid_everybody   200 2023-04-09 17:34 ifone.sh
--rw-rw---- 1 root aid_everybody   491 2023-04-09 17:34 ifthenblock.sh
--rw-rw---- 1 root aid_everybody   177 2023-04-09 17:34 input.bat
--rw-rw---- 1 root aid_everybody    95 2023-03-31 16:32 kuohaomath.sh
--rw-rw---- 1 root aid_everybody   447 2023-04-09 17:34 label_loop.bat
--rw-rw---- 1 root aid_everybody   131 2023-04-10 18:38 locate.sh
--rw-rw---- 1 root aid_everybody   367 2023-04-10 18:39 locateres.txt
--rw-rw---- 1 root aid_everybody  4760 2023-04-15 17:12 lsdir.txt
--rw-rw---- 1 root aid_everybody  4760 2023-04-15 17:51 lsdir_tm.txt
--rw-rw---- 1 root aid_everybody   273 2023-04-11 17:18 mkdir.sh
--rw-rw---- 1 root aid_everybody   131 2023-03-31 16:32 netactivehost.sh
--rw-rw---- 1 root aid_everybody    73 2023-04-12 23:53 new.txt
--rw-rw---- 1 root aid_everybody   151 2023-03-31 16:32 newplacesed.txt
--rw-rw---- 1 root aid_everybody   149 2023-03-31 16:32 newtestsed.txt
--rw-rw---- 1 root aid_everybody  2200 2023-04-12 17:48 phonelist.txt
--rw-rw---- 1 root aid_everybody  1830 2023-04-13 06:49 phonelistok.txt
--rw-rw---- 1 root aid_everybody   112 2023-04-13 01:10 phonenum.sh
--rw-rw---- 1 root aid_everybody    43 2023-04-09 17:34 print.sh
--rw-rw---- 1 root aid_everybody   693 2023-03-31 16:32 proxy.expect
--rw-rw---- 1 root aid_everybody   680 2023-04-09 17:34 regular_express.txt
--rw-rw---- 1 root aid_everybody    12 2023-03-25 17:32 s
--rw-rw---- 1 root aid_everybody   369 2023-03-29 13:27 script1.sh
--rw-rw---- 1 root aid_everybody   358 2023-03-29 13:27 script2.sh
--rw-rw---- 1 root aid_everybody   209 2023-03-29 13:27 script3.sh
--rw-rw---- 1 root aid_everybody    59 2023-03-31 16:32 sed.txt
--rw-rw---- 1 root aid_everybody    89 2023-03-31 16:32 sedinplace.sh
--rw-rw---- 1 root aid_everybody    62 2023-03-31 16:32 sedinplace.txt
--rw-rw---- 1 root aid_everybody   118 2023-03-31 16:32 sedreplace.sh
--rw-rw---- 1 root aid_everybody   277 2023-04-15 07:17 sort.sh
--rw-rw---- 1 root aid_everybody     6 2023-04-15 07:07 sort.txt
--rw-rw---- 1 root aid_everybody   334 2023-04-15 17:53 sortdirtm.sh
--rw-rw---- 1 root aid_everybody   822 2023-04-16 09:10 sortfile.sh
--rw-rw---- 1 root aid_everybody    73 2023-04-09 17:34 sshmysj.sh
--rw-rw---- 1 root aid_everybody     0 2023-03-29 07:41 testfile1
--rw-rw---- 1 root aid_everybody     0 2023-03-29 07:41 testfile2
--rw-rw---- 1 root aid_everybody   503 2023-03-31 16:32 testfileattr.sh
-drwxrwx--- 2 root aid_everybody  4096 2023-04-14 07:47 testgrep
--rw-rw---- 1 root aid_everybody  1185 2023-04-15 07:20 testgrep.sh
--rw-rw---- 1 root aid_everybody   197 2023-03-31 16:32 testgrep.txt
--rw-rw---- 1 root aid_everybody   134 2023-03-31 16:32 testint.sh
--rw-rw---- 1 root aid_everybody   213 2023-03-31 16:32 testjudge.sh
--rw-rw---- 1 root aid_everybody   147 2023-03-31 16:32 testsed.txt
--rw-rw---- 1 root aid_everybody   478 2023-04-09 17:34 trapexcep.sh
--rw-rw---- 1 root aid_everybody   311 2023-04-12 17:48 vararray.sh
--rw-rw---- 1 root aid_everybody  1383 2023-04-09 17:34 vbird.sh
--rw-rw---- 1 root aid_everybody 12402 2023-04-09 17:34 wc.txt
+/home/scusky/.vscode-server/bin/f1b07bd25dfad64b0167beb15359ae573aecd2cc/bin/remote-cli
+/home/scusky/miniconda3/bin
+/home/scusky/miniconda3/condabin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/usr/lib/wsl/lib
+/mnt/c/Program Files/VanDyke Software/Clients
+/mnt/d/Program Files (x86)/Python38/Scripts
+/mnt/d/Program Files (x86)/Python38
+/mnt/c/Users/jcrj/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0
+/mnt/d/ProgramData/RealEvo/compiler/arm-none-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/csky-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/aarch64-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/riscv-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/sparc-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/c6x-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/arm-sylixosliteBe-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/arm-sylixoslitele-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/mips64-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/mips-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/ppc-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/x86_64-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/x86-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/compiler/arm-sylixos-toolchain/bin
+/mnt/d/ProgramData/RealEvo/tools/yagarto-tools/bin
+/mnt/c/WINDOWS/system32
+/mnt/c/WINDOWS
+/mnt/c/WINDOWS/System32/Wbem
+/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0
+/mnt/c/WINDOWS/System32/OpenSSH
+/mnt/d/Program Files/VisualSVN Server/bin
+/mnt/d/Program Files/MATLAB/R2016a/runtime/win64
+/mnt/d/Program Files/MATLAB/R2016a/bin
+/mnt/d/Program Files/MATLAB/R2016a/polyspace/bin
+/mnt/d/Program Files/WinMerge
+/mnt/d/SL330A/bin
+/mnt/d/Program Files (x86)/bin
+/mnt/c/Program Files/dotnet
+/mnt/d/Program Files (x86)/Python38/Scripts
+/mnt/c/mingw64/bin
+/mnt/d/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE
+/mnt/d/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64
+/mnt/c/Program Files/Docker/Docker/resources/bin
+/mnt/d/Program Files/Git/cmd
+/mnt/d/Program Files (x86)/Python38
+/mnt/d/Program Files/Bandizip
+/mnt/d/Program Files/JetBrains/PyCharm Community Edition 2023.1.2/bin
+/mnt/d/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.1/bin
+/mnt/c/Users/jcrj/.jdks/openjdk-18.0.1.1/bin
+/mnt/c/Users/jcrj/.dotnet/tools
+/mnt/d/Program Files (x86)/Python38/Scripts
+/mnt/c/Users/jcrj/AppData/Local/GitHubDesktop/bin
+/mnt/c/Windows/SysWOW64
+/mnt/c/Users/jcrj/AppData/Local/Microsoft/WindowsApps
+/mnt/d/Program Files/Git/bin
+/mnt/c/mingw64/bin
+/mnt/d/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64
+/mnt/c/Users/jcrj/AppData/Local/Programs/Microsoft VS Code/bin
