@@ -11,14 +11,6 @@
 #* 
 #**************************************************************************/ 
 
-
-
-
-
-echo "采用gawk解析，带分隔符的数据"
-anum=$(echo $PATH|gawk -F: '{print NF}')
-echo "anum=$anum"
-
 echo $PATH|gawk 'BEGIN{FS=":"; OFS="\n"} {
 for (i=1;i<NF;i++)
 	{
@@ -26,8 +18,16 @@ for (i=1;i<NF;i++)
 	}
 }' >dir.txt
 
+cnt=0
+while read line
+do
+	#num=$(ls "$line"|wc -l)	
+	#echo "$cnt:start ls $line,num=$num"
+	#cnt=$[cnt+1]
+	if [ !  -e "$line" ]
+	then
+		echo "$line" > misspath.txt
+	fi
+done<"./dir.txt"
 
 
-
-num=$(echo $PATH|grep -Eo ":"|wc -l)
-echo "num=$[num+1]"
