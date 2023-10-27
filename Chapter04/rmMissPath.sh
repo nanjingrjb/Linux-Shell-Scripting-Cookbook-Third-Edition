@@ -12,9 +12,17 @@
 #**************************************************************************/ 
 
 
+str=$(date +"%Y-%m-%d-%H-%M-%S")
+cp dir.txt dir_back_"$str".txt
 
 
+myfile=dir.txt
 while read miss
 do
-	echo $PATH|sed '/$miss/d'
-done<"./misspath.txt"
+cat $myfile|grep -v $miss >new_dir.txt
+myfile=new_dir.txt
+done <misspath.txt
+
+
+
+
