@@ -1,0 +1,72 @@
+1:123.txt:             ASCII text
+4:array.sh:            ASCII text
+5:arrin.sh:            ASCII text
+7:bcfloat.sh:          ASCII text, with CRLF line terminators
+9:crontab:             ASCII text, with CRLF line terminators
+10:crontab.sh:          ASCII text
+11:crontab.txt:         ASCII text
+13:deldir.sh:           ASCII text
+14:dir.txt:             ASCII text
+15:dirbin.txt:          ASCII text
+16:dirinfo.txt:         ASCII text
+18:exprmul.sh:          ASCII text, with CRLF line terminators
+21:foo.txt:             ASCII text
+23:grep.sh:             Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+24:grepMakeDir.sh:      ASCII text
+26:grepawk.sh:          ASCII text, with CRLF line terminators
+27:grepdir.sh:          ASCII text
+28:grepdir.txt:         ASCII text
+29:grepphone.sh:        Bourne-Again shell script, ASCII text executable
+30:greprm.sh:           ASCII text
+31:greprmpho.sh:        ASCII text
+34:hj.txt:              ASCII text
+36:ifone.sh:            Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+38:input.bat:           DOS batch file, ASCII text, with CRLF line terminators
+39:kuohaomath.sh:       ASCII text, with CRLF line terminators
+42:locateres.txt:       ASCII text
+43:ls.txt:              ASCII text
+44:lsdir.txt:           ASCII text
+45:lsdir_tm.txt:        ASCII text
+46:lst.txt:             ASCII text
+48:myfunc.sh:           ASCII text
+49:mygrep.txt:          ASCII text
+51:netactivehost.sh:    ASCII text, with CRLF line terminators
+52:new.txt:             ASCII text
+53:newplacesed.txt:     ASCII text, with CRLF line terminators
+54:newtestsed.txt:      ASCII text, with CRLF line terminators
+56:parsedes.sh:         ASCII text
+58:phonelist.txt:       ASCII text
+59:phonelistok.txt:     ASCII text
+60:phonenum.sh:         Bourne-Again shell script, ASCII text executable
+61:print.sh:            ASCII text, with CRLF line terminators
+63:redes.sh:            ASCII text
+64:regjudge.sh:         ASCII text
+65:regular_express.txt: ASCII text, with CRLF line terminators
+66:regvar.sh:           ASCII text
+68:res.txt:             ASCII text
+69:script1.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+70:script2.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+71:script3.sh:          ASCII text, with CRLF line terminators
+72:sed.txt:             ASCII text, with CRLF line terminators
+73:sed_grep.txt:        ASCII text, with CRLF line terminators
+74:sedinplace.sh:       ASCII text, with CRLF line terminators
+75:sedinplace.txt:      ASCII text, with CRLF line terminators
+76:sedreplace.sh:       Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+77:seq.sh:              ASCII text
+78:sort.sh:             ASCII text
+79:sort.txt:            ASCII text
+80:sortdirtm.sh:        ASCII text
+82:sshmysj.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+83:tarspefile.sh:       ASCII text
+84:testfileattr.sh:     Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+86:testgrep.txt:        ASCII text, with CRLF line terminators
+87:testint.sh:          Bourne-Again shell script, ASCII text executable, with CRLF line terminators
+90:testsed.txt:         ASCII text, with CRLF line terminators
+91:teststrequ.sh:       ASCII text
+92:testuser.sh:         ASCII text
+95:until.sh:            ASCII text
+96:unzipshellbible.sh:  ASCII text
+97:vararray.sh:         ASCII text
+99:vitest.txt:          ASCII text
+100:vitest1.txt:         ASCII text
+101:wc.txt:              ASCII text, with CRLF line terminators

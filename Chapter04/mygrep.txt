@@ -1,0 +1,11 @@
+testfileattr.sh
+testfind
+testgrep
+testgrep.sh
+testgrep.txt
+testint.sh
+testjudge.sh
+testsed.sh
+testsed.txt
+teststrequ.sh
+testuser.sh
