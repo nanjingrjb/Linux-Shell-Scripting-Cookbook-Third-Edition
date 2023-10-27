@@ -13,6 +13,7 @@
 /mnt/c/Program Files/VanDyke Software/Clients
 /mnt/d/Program Files (x86)/Python38/Scripts
 /mnt/d/Program Files (x86)/Python38
+/mnt/c/Users/jcrj/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0
 /mnt/d/ProgramData/RealEvo/compiler/arm-none-toolchain/bin
 /mnt/d/ProgramData/RealEvo/compiler/csky-sylixos-toolchain/bin
 /mnt/d/ProgramData/RealEvo/compiler/aarch64-sylixos-toolchain/bin

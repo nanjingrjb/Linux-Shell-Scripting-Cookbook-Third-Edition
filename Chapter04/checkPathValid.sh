@@ -26,7 +26,7 @@ do
 		echo "dir $elm no exist."
 		if [ $first -eq 1 ];then
 			first=0
-			echo $PATH|sed   "s#$elm##g" >tmp_path.txt
+			echo "$mypath"|sed   "s#$elm##g" >tmp_path.txt
 		else
 		    cat "$mypath"|sed  "s#$elm##g" >tmp_path.txt
 		fi
