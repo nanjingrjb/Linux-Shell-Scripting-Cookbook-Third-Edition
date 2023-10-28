@@ -23,6 +23,6 @@ do
 	fi
 
 	echo "using grep -E:"
-	echo "$phone"| grep -E "^\(?[1-9][0-9][0-9]\)?(| |-|\.)[0-9][0-9][0-9]( |-|\.)[0-9][0-9][0-9][0-9]" && echo "$phone,match"||echo "$phone,no match"
+	echo "$phone"| grep -E "^\(?[1-9][0-9]{2}\)?(| |-|\.)[0-9]{3}( |-|\.)[0-9]{4}" && echo "$phone,match"||echo "$phone,no match"
 done < phone.txt
 
