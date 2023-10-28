@@ -21,5 +21,8 @@ do
 	else
 		echo "$phone,no match"
 	fi
+
+	echo "using grep -E:"
+	echo "$phone"| grep -E "^\(?[1-9][0-9][0-9]\)?(| |-|\.)[0-9][0-9][0-9]( |-|\.)[0-9][0-9][0-9][0-9]" && echo "$phone,match"||echo "$phone,no match"
 done < phone.txt
 
