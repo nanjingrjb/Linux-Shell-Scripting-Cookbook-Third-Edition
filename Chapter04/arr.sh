@@ -17,4 +17,9 @@ echo "Apple costs ${fruits_value[apple]}"
  declare -A ass_array
  ass_array=([index1]=val1 [index2]=val2)
 echo ${ass_array[*]}
- 
+
+
+p=({0..9})
+for i in ${p[*]}
+do echo "val is:$i"
+done
