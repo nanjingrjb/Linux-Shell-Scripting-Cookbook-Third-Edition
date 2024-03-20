@@ -21,5 +21,11 @@ echo ${ass_array[*]}
 
 p=({0..9})
 for i in ${p[*]}
-do echo "val is:$i"
+do
+	if [ $(($i%2)) -eq 0 ]
+	then
+	    echo -e "$i is even"
+	else
+	    echo -e "$i is odd"
+	fi
 done
