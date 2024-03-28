@@ -15,3 +15,12 @@ done
 echo ${c[*]}
 
 
+
+while read line
+do
+	str=(${str[*]}  $line)
+	echo $line
+done  < "./arr.sh"
+
+
+echo "val=${arr[*]}"
