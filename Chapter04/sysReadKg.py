@@ -58,9 +58,17 @@ def getAllSetKg(startPath,des='sys.inf'):
           allVal.append(i)
     allVal=list(set(allVal))       
     return set(allVal)
+     
+def main():
+    if len(sys.argv) > 1:  
+        startPath=sys.argv[1]
+        allsetKg=getAllSetKg(startPath)
+        with open(startPath+'set.txt','w') as f:
+            for i in allsetKg:
+                print(i,file=f)
+    else:  
+        print("No arguments provided.")  
+  
+if __name__ == "__main__":  
+    main()
 
-startPath="E:/SAL_WORK/3-CFG_ALL/02_HSCfg/sysall"
-allsetKg=getAllSetKg(startPath)
-with open('set.txt','w') as f:
-    for i in allsetKg:
-        print(i,file=f)
