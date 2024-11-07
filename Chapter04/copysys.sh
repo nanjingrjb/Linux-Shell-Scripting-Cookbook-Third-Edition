@@ -11,30 +11,34 @@
 #* 
 #**************************************************************************/ 
 
-des1='./sysall/'
-if [ -e $des ]
+src="$1"
+echo $src
+des1="${src}""sysall/"
+
+if [ -e "${des1}" ]
 then
-	rm -fr $des
+	rm -fr $des1
 fi
 
-find ./*/ -path "./厂*/*" -prune -o -type f -name "sys.inf" -print|while read -r FILE;
+
+find ./*/ -path "${src}/""厂*/*" -prune -o -type f -name "sys.inf" -print|while read -r FILE;
 do
 	rel_path=$(echo $FILE|gawk -F / '{print $2}')
-	echo $rel_path
+	#echo $rel_path
 	des="${des1}/${rel_path}"
 	mkdir -p $des
 	cp $FILE $des
 done
 
 
-sleep 2
-
 find $des1 -type f -name "sys.inf" -print |while read sys
 do
 	sed -i -n '/<R/,$p' ${sys} 
 done
 
-"D:/Program Files (x86)/Python38/python.exe" e:/SAL_WORK/3-CFG_ALL/02_HSCfg/sysReadKg.py
+python sysReadKg.py $src
+
+
 
 
 
