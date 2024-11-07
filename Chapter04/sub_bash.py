@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # ************************************************************************ 
 # * 
-# * @file:pyver.py 
+# * @file:sub_bash.py 
 # * @author:nanjingrjb@gmail.com 
-# * @date:2023-12-31 13:27 
+# * @date:2024-11-05 18:12 
 # * @version 1.0  
 # * @description: Python Script 
 # * @Copyright (c)  all right reserved 
@@ -12,5 +12,9 @@
 #************************************************************************* 
 
 import os,sys
-print(sys.version)
+import subprocess as sb
+
+cmd="find . -type f -name '*.sh'|wc -l"
+res=sb.getoutput(cmd)
+print(res)
 

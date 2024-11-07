@@ -2,24 +2,22 @@
 
 # ***************************************************************************
 # * 
-# * @file:funvar.sh 
+# * @file:trap_exit.sh 
 # * @author:nanjingrjb@gmail.com 
-# * @date:2024-03-23 08:08 
+# * @date:2024-11-03 06:57 
 # * @version 1.0  
 # * @description: Shell script 
 # * @Copyright (c)  all right reserved 
 #* 
 #**************************************************************************/ 
 
+function year_fun()
+{
+	echo "test."
+	year=2014
+	return 0
+}
 
 
-flist=("ls" "echo")
-var=("." "mymsg")
-
-len=${#flist}
-for i in {0..1}
-do
-	${flist[$i]} ${var[$i]}
-
-done
-
+trap 'echo "this is a test.line=$LINENO,year=$year" ' EXIT
+year_fun

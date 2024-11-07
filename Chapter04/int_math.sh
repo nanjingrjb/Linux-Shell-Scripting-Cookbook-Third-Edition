@@ -2,9 +2,9 @@
 
 # ***************************************************************************
 # * 
-# * @file:funvar.sh 
+# * @file:int_math.sh 
 # * @author:nanjingrjb@gmail.com 
-# * @date:2024-03-23 08:08 
+# * @date:2024-10-31 13:29 
 # * @version 1.0  
 # * @description: Shell script 
 # * @Copyright (c)  all right reserved 
@@ -12,14 +12,15 @@
 #**************************************************************************/ 
 
 
+a=1
+b=2
+echo "方法1：使用\'\$[ \$a+\$b ]\'来计算"
+echo "$a+$b=$[ $a+$b ]"
 
-flist=("ls" "echo")
-var=("." "mymsg")
+echo "方法2：使用\'\$((\$a+\$b))\'来计算"
+echo "$a+$b=$(($a+$b)) "
 
-len=${#flist}
-for i in {0..1}
-do
-	${flist[$i]} ${var[$i]}
 
-done
+
+
 
