@@ -1,0 +1,5 @@
+set timeout 30
+spawn ssh -l Administrator 192.168.193.230
+expect "password:"
+send "scusky111111\n"
+interact
