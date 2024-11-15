@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# ***************************************************************************
+# * 
+# * @file:ssh_home_pc.sh 
+# * @author:nanjingrjb@gmail.com 
+# * @date:2024-11-10 21:16 
+# * @version 1.0  
+# * @description: Shell script 
+# * @Copyright (c)  all right reserved 
+#* 
+#**************************************************************************/ 
+
+pass="scusky111111"
+ip="192.168.193.31"
+user="jcrj"
+cmd="$*"
+sshpass -p "$pass" ssh ${user}@${ip} "$cmd"
