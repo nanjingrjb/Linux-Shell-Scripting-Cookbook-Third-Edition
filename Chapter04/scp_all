@@ -1,0 +1,170 @@
+#!/bin/bash
+
+# ***************************************************************************
+# * 
+# * @file:scp_home_pc.sh 
+# * @author:nanjingrjb@gmail.com 
+# * @date:2024-11-10 21:55 
+# * @version 1.0  
+# * @description: Shell script 
+# * @Copyright (c)  all right reserved 
+#* 
+#**************************************************************************/ 
+function getuser()
+{
+	local host="$1"
+if [ $host = 'jcrj' ]
+then
+	user=$user_jcrj
+elif [ $host = 'home' ]
+then
+	user=$user_home
+elif [ $host = 'k60' -o $host = 'oppo' ]
+then
+	user=$user_root
+fi
+echo $user
+}
+function getip()
+{
+	local host="$1"
+if [ $host = 'jcrj' ]
+then
+	user=$ip_jcrj
+elif [ $host = 'home' ]
+then
+	user=$ip_home
+elif [ $host = 'k60' ]
+then
+	user=$ip_k60
+elif [ $host = 'oppo' ]
+then
+	user=$ip_oppo
+fi
+echo $user
+}
+
+function getpass()
+{
+	local host="$1"
+if [ $host = 'jcrj' ]
+then
+	user=$pass_jcrj
+elif [ $host = 'home' ]
+then
+	user=$pass_home
+elif [ $host = 'k60' -o  $host = 'oppo' ]
+then
+	user=$pass_root
+fi
+echo $user
+}
+
+function getport()
+{
+	local host="$1"
+if [ $host = 'jcrj' ]
+then
+	user=$port_jcrj
+elif [ $host = 'home' ]
+then
+	user=$port_home
+elif [ $host = 'k60' -o  $host = 'oppo' ]
+then
+	user=$port_root
+fi
+echo $user
+}
+
+function getRepath()
+{
+	local host="$1"
+if [ $host = 'jcrj' ]
+then
+	user=$remote_jcrj
+elif [ $host = 'home' ]
+then
+	user=$remote_home
+elif [ $host = 'k60'  ]
+then
+	user=$remote_k60
+elif [  $host = 'oppo' ]
+then
+	user=$remote_oppo
+fi
+echo $user
+}
+ip_home="192.168.193.230"
+ip_jcrj="192.168.193.31"
+ip_k60="192.168.193.95"
+ip_oppo="192.168.193.16"
+
+local_des="/sdcard/down_k60"
+
+user_root="root"
+user_jcrj="jcrj"
+user_home="Administrator"
+
+pass_root="123456"
+pass_home="scusky111111"
+pass_jcrj="scusky111111"
+
+port_root=8022
+port_home=22
+port_jcrj=22
+
+
+remote_jcrj="c:\\Users\\jcrj\\Downloads"
+remote_home="c:\\Users\\Administrator\\Downloads"
+remote_k60="/sdcard/down_k60"
+remote_oppo="/sdcard/down_oppo"
+# 使用方法为根据用户设置自动进行双向数据传输
+#
+if [ $# -eq 0 ]
+then
+	echo "usage:bash scp_home g remote_file_path----get remote file to save downk60.\n
+	or bash scp_home p local_file:send local file to remote/users/Downloads."
+else
+host=$1
+op=$2
+file=$3
+
+user=$(getuser $host )
+#echo "user=$user"
+ip=$(getip $host )
+#echo "ip=$ip"
+
+pass=$(getpass $host )
+#echo "pass=$pass"
+
+port=$(getport $host )
+#echo "port=$port"
+
+remote_des=$(getRepath $host )
+#echo "port=$port"
+
+if [ $op = 'g' ] 
+then
+src=$user@$ip:$file
+if [ $host = 'home' -o $host = 'jcrj' ]
+	then
+		wname=$(echo $file|sed 's!\\!/!g')
+        des=$local_des/$(basename $wname)
+	else
+		des=$local_des/$(basename $file)
+fi
+
+elif [ $op = 'p' ]
+then
+src=$file
+
+   if [ $host = 'home' -o $host = 'jcrj' ]
+   then
+   des=$user@$ip:$remote_des\\$(basename $file)
+else
+   des=$user@$ip:$remote_des/$(basename $file)
+   fi
+fi
+
+sshpass -p $pass  scp -P $port -r  $src $des 
+fi
