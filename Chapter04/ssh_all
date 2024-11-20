@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# ***************************************************************************
+# * 
+# * @file:ssh_home_pc.sh 
+# * @author:nanjingrjb@gmail.com 
+# * @date:2024-11-10 21:16 
+# * @version 1.0  
+# * @description: Shell script 
+# * @Copyright (c)  all right reserved 
+#* 
+#**************************************************************************/ 
+source readcomcfg.sh
+# 使用方法为根据用户设置自动进行双向数据传输
+# #
+
+ if [ $# -lt 1 ]
+ then
+         echo "usage:bash ssh_all host [cmdfile].\n"
+ else
+        host=$1
+		user=$(getspecfg $host user )
+		echo user=$user
+		#echo "user=$user"
+		ip=$(getspecfg $host ip )
+		##echo "ip=$ip"
+		#
+		pass=$(getspecfg $host pass )
+		##echo "pass=$pass"
+		#
+		port=$(getspecfg $host port )
+		##echo "port=$port"
+		shift 1
+		cmd="$*"
+		if [ -z $cmd ]
+		then
+           sshpass -p "$pass" ssh -p $port  ${user}@${ip} 
+		else
+		echo "cmd=$cmd"
+		   [[ -f $cmd ]] && bash scp_all $host p $cmd readcom* comc*
+		   sshpass -p "$pass" ssh -p $port ${user}@${ip} "bash ${cmd} $host"
+
+		fi
+fi
+
