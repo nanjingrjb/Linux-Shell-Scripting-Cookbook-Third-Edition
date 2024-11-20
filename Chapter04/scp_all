@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# ***************************************************************************
+# * 
+# * @file:scp_home_pc.sh 
+# * @author:nanjingrjb@gmail.com 
+# * @date:2024-11-10 21:55 
+# * @version 1.0  
+# * @description: Shell script 
+# * @Copyright (c)  all right reserved 
+#* 
+#**************************************************************************/ 
+source readcomcfg.sh
+# 使用方法为根据用户设置自动进行双向数据传输
+#
+if [ $# -lt 3 ]
+then
+	echo "usage:bash scp_home g remote_file_path----get remote file to save downk60.\n
+	or bash scp_home p local_file:send local file to remote/users/Downloads."
+else
+host=$1
+op=$2
+shift 2 
+filelst=($@)
+
+echo "file=${filelst[*]}"
+
+user=$(getspecfg $host user )
+echo user=$user
+#echo "user=$user"
+ip=$(getspecfg $host ip )
+#echo "ip=$ip"
+
+pass=$(getspecfg $host pass )
+#echo "pass=$pass"
+
+port=$(getspecfg $host port )
+#echo "port=$port"
+
+remote_des=$(getspecfg $host path)
+#echo "port=$port"
+
+for file in ${filelst[*]}
+do
+
+if [ $op = 'g' ] 
+	then
+	src=$user@$ip:"$file"
+	if [ $host = 'home' -o $host = 'jcrj' ]
+	then
+		wname=$(echo $file|sed 's!\\!/!g')
+        des=$local_des/$(basename $wname)
+	else
+		des=$local_des/$(basename $file)
+	fi
+elif [ $op = 'p' ]
+	then
+	src="$file"
+	if [ $host = 'home' -o $host = 'jcrj' ]
+	then
+	des=$user@$ip:$remote_des\\$(basename "$file")
+	else
+	des=$user@$ip:$remote_des/$(basename "$file")
+	fi
+fi
+
+sshpass -p $pass  scp -P $port -r  "$src" "$des" 
+done
+fi

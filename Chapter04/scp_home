@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# ***************************************************************************
+# * 
+# * @file:scp_home_pc.sh 
+# * @author:nanjingrjb@gmail.com 
+# * @date:2024-11-10 21:55 
+# * @version 1.0  
+# * @description: Shell script 
+# * @Copyright (c)  all right reserved 
+#* 
+#**************************************************************************/ 
+user="Administrator"
+ip="192.168.193.230"
+pass="scusky111111"
+
+lst="$*"
+for i in ${lst[@]}
+do
+echo "$i"
+sshpass -p "$pass" scp -r  "$user"@"${ip}":"$i" /sdcard/down_k60
+test $? && echo "copy $i ok"|| echo "$i failed"
+done
