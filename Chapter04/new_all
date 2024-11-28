@@ -1,0 +1,7 @@
+#! /bin/bash
+
+lst=(home jcrj k60 oppo)
+for i in ${lst[*]}
+do
+	bash scp_all $i p $(ls -t|head -n 10)
+done

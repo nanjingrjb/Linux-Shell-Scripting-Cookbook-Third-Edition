@@ -1,0 +1,8 @@
+
+for i in {c..e}
+do
+  find /mnt/$i -maxdepth 2  -type d -name '.svn' -print > file_${i}
+bash scp_all k60 p file_${i}
+done
+exit
+

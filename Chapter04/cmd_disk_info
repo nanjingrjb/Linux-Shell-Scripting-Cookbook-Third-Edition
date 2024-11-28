@@ -1,0 +1,4 @@
+wsl
+find /mnt/c -maxdepth 2 -path */*.svn* -prune -o -print  >jcrjc 2>/dev/null
+bash scp_all k60 p jcrjc
+exit

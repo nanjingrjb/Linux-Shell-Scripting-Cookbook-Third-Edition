@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# ***************************************************************************
+# * 
+# * @file:jcrj_update_git.sh 
+# * @author:nanjingrjb@gmail.com 
+# * @date:2024-11-15 15:57 
+# * @version 1.0  
+# * @description: Shell script 
+# * @Copyright (c)  all right reserved 
+#* 
+#**************************************************************************/ 
+
+
+
+
+wsl 
+cd /mnt/c/users/jcrj/Downloads
+ls * >filelst.txt
+bash scp_all k60 p filelst.txt
+echo "rm filelst.txt" 
+rm filelst.txt
+exit
