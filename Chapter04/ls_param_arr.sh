@@ -2,9 +2,9 @@
 
 # ***************************************************************************
 # * 
-# * @file:arr_append.sh 
+# * @file:ls_param_arr.sh 
 # * @author:nanjingrjb@gmail.com 
-# * @date:2024-03-29 08:38 
+# * @date:2024-12-05 06:43 
 # * @version 1.0  
 # * @description: Shell script 
 # * @Copyright (c)  all right reserved 
@@ -13,17 +13,20 @@
 
 
 
-arr_append()
-{
-	old="$1"
-	new="$2"
-    echo ${old[*]}
-	echo ${new[*]}
-	for i in ${new[*]}
-	do
-		old=(${old[*]}  $i)
-	done
-	echo ${old[*]}
-}
+if (($#!=1))
+then
+	echo "usage:$0 filename"
+	exit 2
+fi
 
-arr_append "$*"
+fname=$1
+
+declare -a myarr
+myarr=($(ls -ld $fname))
+for((i=0;i<${#myarr[@]};i++))
+do
+	printf "param %d:%s\n" "$i" "${myarr[$i]}"
+done
+
+echo "$1 size is:${myarr[4]}"
+
