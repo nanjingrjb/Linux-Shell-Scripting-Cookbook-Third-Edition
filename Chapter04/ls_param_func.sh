@@ -25,17 +25,17 @@ function lsparts ()
     CRTIME=$8
     FILE=$9
 }
-
-echo "all param is:$*"
-declare -a args
-args=($*)
-echo "all num is :${#args[*]}"
-for ((i=0;i<${#args[*]};i++))
+all=$#
+for ((i=0;i<$all;i++))
 do
 	fname="$1"
     echo $fname
     shift
     lsparts $(ls -l "$fname")
-echo $i $FILE has $LCOUNT 'link(s)' and is $SIZE bytes long.
+	echo $i $FILE has $LCOUNT 'link(s)' and is $SIZE bytes long.
 done
+echo "param num is :$#"
+echo "all param is:$*"
+#declare -a args
+#args=($*)
 
