@@ -27,12 +27,15 @@ function lsparts ()
 }
 
 echo "all param is:$*"
-for ((i=1;i<$#;i++))
+declare -a args
+args=($*)
+echo "all num is :${#args[*]}"
+for ((i=0;i<${#args[*]};i++))
 do
 	fname="$1"
     echo $fname
-    shift 1
+    shift
     lsparts $(ls -l "$fname")
-echo $FILE has $LCOUNT 'link(s)' and is $SIZE bytes long.
+echo $i $FILE has $LCOUNT 'link(s)' and is $SIZE bytes long.
 done
 
