@@ -11,6 +11,17 @@
 #* 
 #**************************************************************************/ 
 
+function parse()
+{
+	local arr=($*)
+
+local n=0
+for i in "${arr[@]}"
+do
+	echo "$i=${!arr[$n]}"
+	n=$((n+1))
+done
+}
 
 
 for i  in ${!BASH*};
@@ -24,9 +35,8 @@ arr=(v1 v2 v3)
 v1=1
 v2=2
 v3=3
-n=0
-for i in ${arr[*]}
-do
-	echo "$i=${!arr[$n]}"
-	n=$((n+1))
-done
+parse ${arr[*]}	
+v1=11
+v2=21
+v3=31
+parse ${arr[*]}	
