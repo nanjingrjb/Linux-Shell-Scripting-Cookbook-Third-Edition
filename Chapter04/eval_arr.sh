@@ -26,5 +26,31 @@ function getval()
 	printf "the last-2 parm is %d\n" $(eval echo \$$(($#-2)))
 }
 
-getval $*
+function usage()
+{
+	echo "usage:$0 -i index -a arr"
+}
 
+function parseinput()
+{
+while  getopts "i:a:" key
+do
+  case $key in
+	  i) index=$OPTARG
+		  ;;
+	  a) 
+		  shift $(($OPTIND-2))
+		  arr=($*)
+		  ;;
+	  ?) echo "no jx"
+         usage 
+		  ;;
+  esac
+done
+  echo "index=$index"
+  echo "arr=${arr[@]}"
+  getval $index ${arr[@]}
+}
+
+
+parseinput $*
